@@ -17,30 +17,32 @@ actualDelta = delta_time / 1000000;
 global.deltaMultiplier = actualDelta/targetDelta;
 
 // check if song ended
-if (variable_global_exists("musicSync"))
+if (variable_global_exists("musicSync") and global.songIsPlaying)
 {
 	var curTime;
+	var finalTime;
 	if (global.audioSyncGroup)
 	{
 		curTime = audio_sync_group_get_track_pos(global.musicSync);
+		finalTime = audio_sound_length(global.song);
 	}
 	else
 	{
 		curTime = audio_sound_get_track_position(global.songId);
+		finalTime = audio_sound_length(global.songId);
 	}
-	var finalTime = audio_sound_length(global.song);
-	if (curTime >= finalTime - 0.1) && (room = MainGame) {
+	//if (finalTime <= 0) // fix song skip early
+	//{
+	//	finalTime = 100;
+	//}
+	if (!audio_is_playing(global.songId))
+	{
 		timeUntilMoveOn++;
-		if (global.audioSyncGroup)
-		{
-			audio_pause_sync_group(global.musicSync);
-		}
-		else
-		{
-			audio_pause_sound(global.songId);
-			audio_pause_sound(global.voicesId);
-		}
 	}
+	//if (curTime >= finalTime - 1.1) && (room = MainGame)
+	//{
+	//	timeUntilMoveOn++;
+	//}
 }
 
 //if (timeUntilMoveOn >= 420) {
@@ -53,7 +55,18 @@ if (variable_global_exists("musicSync"))
 // when the song has ended
 //if (timeUntilMoveOn >= 420) && !(global.dead) && (keyboard_check_pressed(vk_enter)) {
 if (timeUntilMoveOn >= 420) && !(global.dead) {
+	global.songIsPlaying = false;
 	var roomTo = MainGame;
+	
+	if (global.audioSyncGroup)
+	{
+		audio_pause_sync_group(global.musicSync);
+	}
+	else
+	{
+		audio_pause_sound(global.songId);
+		audio_pause_sound(global.voicesId);
+	}
 	
 	// load the next songs chart
 	load_chart(global.nextSong[global.songOn], global.currentDif);

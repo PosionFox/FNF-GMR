@@ -12,6 +12,8 @@ global.songName = "Tutorial";
 global.boyfriend = "og";
 global.roomBefore = room;
 
+global.songIsPlaying = false;
+
 // voice muting
 global.playVoice = 1;
 

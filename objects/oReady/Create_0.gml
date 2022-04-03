@@ -22,6 +22,7 @@ if (file_exists(dialogueFile)) hasDialog = true;
 if (global.freeplay) hasDialog = false;
 
 audio_stop_all();
+global.songIsPlaying = false;
 if !(hasDialog) audio_play_sound(snd3, 10, false);
 else {
 	instance_create_depth(x, y, -100000, oDialogBox);

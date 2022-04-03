@@ -14,6 +14,7 @@ if (image_index >= 4)
 		global.songId = audio_play_sound(global.song, 100, false);
 		global.voicesId = audio_play_sound(global.voices, 100, false);
 	}
+	global.songIsPlaying = true;
 	with (oNote)
 	{
 		noteSpeedAdd = (0.01*noteRangeDetermine)*global.accelnotes;

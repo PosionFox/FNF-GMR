@@ -1,6 +1,7 @@
 // debug
 draw_text_transformed(0, -2, "FPS: " + string(fps), 0.6, 0.6, 0);
-//draw_text_transformed(0, 8, "DTM: " + string(global.deltaMultiplier), 0.6, 0.6, 0);
+//draw_text_transformed(0, 8, audio_sound_get_track_position(global.songId), 0.6, 0.6, 0);
+//draw_text_transformed(0, 16, audio_sound_length(global.songId), 0.6, 0.6, 0);
 
 // volume display
 if (keyboard_check_pressed(189)) { global.volume -= 0.1; audio_play_sound(clickText, 0, false); volumeDisplay = 120; }
