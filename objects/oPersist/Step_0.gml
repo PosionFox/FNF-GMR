@@ -13,7 +13,7 @@ hudBopTimer += (global.bpm / 60) * global.deltaMultiplier;
 }
 
 // calculate deltatime
-actualDelta = delta_time / 1000000;
+actualDelta = DT;
 global.deltaMultiplier = actualDelta/targetDelta;
 
 // check if song ended

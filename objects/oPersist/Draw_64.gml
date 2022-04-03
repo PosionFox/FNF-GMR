@@ -1,6 +1,6 @@
 // debug
 draw_text_transformed(0, -2, "FPS: " + string(fps), 0.6, 0.6, 0);
-//draw_text_transformed(0, 8, audio_sound_get_track_position(global.songId), 0.6, 0.6, 0);
+//draw_text_transformed(0, 8, global.deltaMultiplier, 0.6, 0.6, 0);
 //draw_text_transformed(0, 16, audio_sound_length(global.songId), 0.6, 0.6, 0);
 
 // volume display

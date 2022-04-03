@@ -1,5 +1,5 @@
 {
-  "option_windows_display_name": "Friday Night Funkin' | GMS2 Remake",
+  "option_windows_display_name": "Friday Night Funkin GMR",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "0.0.0.3",
   "option_windows_company_info": "Codist",

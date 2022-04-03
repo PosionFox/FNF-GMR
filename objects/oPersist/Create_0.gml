@@ -119,5 +119,6 @@ load_data();
 
 // delta time
 targetDelta = 1/120;
-actualDelta = delta_time / 1000000;
+actualDelta = DT;
 global.deltaMultiplier = actualDelta/targetDelta;
+

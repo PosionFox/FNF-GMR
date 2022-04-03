@@ -40,7 +40,9 @@ function jsontoini(){
 		
 			var chartTime = ds_list_find_value(note, 0)
 			var noteType = ds_list_find_value(note, 1)
-			var noteDuration = ds_list_find_value(note, 2) / 14.151;
+			var _noteDuration = ds_list_find_value(note, 2);
+			if (is_string(_noteDuration)) { _noteDuration = 0; } // ignore strings
+			var noteDuration = _noteDuration / 14.151; // magic
 			if (noteDuration > 1) noteDuration -= 1;
 		
 			var calculatedPos = chartTime * pixelsToSeconds / 1000
