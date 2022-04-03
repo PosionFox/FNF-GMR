@@ -48,6 +48,7 @@ if (category = 0) {
 	draw_option(220, 3, "advanced hud", "Adds extra information under the health bar.", global.advancedHud, true);
 	draw_option(290, 4, "discord", "Shows what song you are playing in discord.\n(Requires Restart)", discord, true);
 	draw_option(360, 5, "downscroll", "Notes scroll downwards instead of up.\nSimilar to osu!mania.", global.downScroll, true);
+	draw_option(430, 6, "audio sync group", "Not compatible with browsers.\nImproves song synchronization but\nmight mess with sound pitch.", global.audioSyncGroup, true);
 }
 if (category = 1) {
 	draw_option(80, 1, "anti-aliasing", "Fixes jagged edges around most sprites.", smoothingOption, true);

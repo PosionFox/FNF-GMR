@@ -3,23 +3,23 @@ function song_import() {
 	global.json_filename = get_open_filename("*.json", "");
 	global.json_id = file_text_open_read(global.json_filename);
 	global.json_contents = file_text_read_string(global.json_id);
-	global.json_decoded = json_decode(global.json_contents)
+	global.json_decoded = json_decode(global.json_contents);
 	
 	// global.notes -- 0-3 = enemy notes; 4-7 = player notes
-	global.notes_output = ds_grid_create(8,16)
-	global.notes = global.json_decoded[? "notes"]
+	global.notes_output = ds_grid_create(8,16);
+	global.notes = global.json_decoded[? "notes"];
 	
-	global.bpm = ds_list_find_value(global.notes, ds_list_size(global.notes) - 1)[? "bpm"]
-	global.bps = global.bpm/60
-	global.noteSpeed = global.bpm/20
-	global.camSpeed = global.bpm * 2.6
-	global.posCoefficient = global.noteSpeed * (100 / (global.camSpeed/48))
-	global.pixelsToSeconds = global.noteSpeed * 120
+	global.bpm = ds_list_find_value(global.notes, ds_list_size(global.notes) - 1)[? "bpm"];
+	global.bps = global.bpm/60;
+	global.noteSpeed = global.bpm/20;
+	global.camSpeed = global.bpm * 2.6;
+	global.posCoefficient = global.noteSpeed * (100 / (global.camSpeed/48));
+	global.pixelsToSeconds = global.noteSpeed * 120;
 	
 	
-	for (i = 0; i < ds_list_size(global.notes); i += 1){
+	for (var i = 0; i < ds_list_size(global.notes); i += 1){
 		global.section_notes = ds_list_find_value(global.notes,i)[? "sectionNotes"]
-		for (j = 0; j < ds_list_size(global.section_notes); j += 1){
+		for (var j = 0; j < ds_list_size(global.section_notes); j += 1){
 			global.note = ds_list_find_value(global.section_notes,j)
 			global.must_hit_section = ds_list_find_value(global.notes,i)[? "mustHitSection"]
 			

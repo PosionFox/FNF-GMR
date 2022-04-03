@@ -32,9 +32,9 @@ function jsontoini(){
 	
 	var lastSection = 1;
 
-	for (i = 0; i < ds_list_size(notes); i += 1){
+	for (var i = 0; i < ds_list_size(notes); i += 1){
 		var section_notes = ds_list_find_value(notes,i)[? "sectionNotes"]
-		for (j = 0; j < ds_list_size(section_notes); j += 1){
+		for (var j = 0; j < ds_list_size(section_notes); j += 1){
 			var note = ds_list_find_value(section_notes,j)
 			var must_hit_section = ds_list_find_value(notes,i)[? "mustHitSection"]
 		

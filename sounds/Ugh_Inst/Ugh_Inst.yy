@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Ugh_Inst.ogg",
-  "duration": 86.63398,
+  "duration": 86.62898,
   "parent": {
     "name": "Ugh",
     "path": "folders/Sounds/Music/Week 7/Ugh.yy",

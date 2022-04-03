@@ -1,2 +1,2 @@
 // goto the debug area
-//room_goto(Debug);
+room_goto(Debug);

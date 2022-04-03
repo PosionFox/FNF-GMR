@@ -39,5 +39,13 @@ curAlpha = 0;
 curAlphaTo = 0.5;
 
 // deactivate all objects, and pause the music
-audio_pause_sync_group(global.musicSync);
+if (global.audioSyncGroup)
+{
+	audio_pause_sync_group(global.musicSync);
+}
+else
+{
+	audio_pause_sound(global.songId);
+	audio_pause_sound(global.voicesId);
+}
 instance_deactivate_all(true);

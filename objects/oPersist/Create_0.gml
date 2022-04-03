@@ -2,6 +2,8 @@
 global.chart = ds_grid_create(8, 16);
 global.song = Tutorial_Inst;
 global.voices = "";
+global.songId = 0;
+global.voicesId = 0;
 global.bpm = 100;
 global.noteSpeed = 5;
 global.camSpeed = 360; // BPM * 2.85256410256
@@ -58,6 +60,7 @@ global.bSides = false;
 global.offset = 0;
 global.advancedHud = false;
 global.downScroll = false;
+global.audioSyncGroup = false;
 
 global.volume = 1;
 global.controller = 1;

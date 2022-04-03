@@ -29,7 +29,7 @@ function create_notes(noteGrid){
 					}
 				}
 				// create the note
-				n = instance_create_layer(noteX, 103 + noteY, "Notes", oNote);
+				var n = instance_create_layer(noteX, 103 + noteY, "Notes", oNote);
 				n.noteRangeDetermine = h;
 				
 				// get the notes value from the grid

@@ -17,12 +17,29 @@ actualDelta = delta_time / 1000000;
 global.deltaMultiplier = actualDelta/targetDelta;
 
 // check if song ended
-if (variable_global_exists("musicSync")) {
-	var curTime = audio_sync_group_get_track_pos(global.musicSync);
+if (variable_global_exists("musicSync"))
+{
+	var curTime;
+	if (global.audioSyncGroup)
+	{
+		curTime = audio_sync_group_get_track_pos(global.musicSync);
+	}
+	else
+	{
+		curTime = audio_sound_get_track_position(global.songId);
+	}
 	var finalTime = audio_sound_length(global.song);
 	if (curTime >= finalTime - 0.1) && (room = MainGame) {
 		timeUntilMoveOn++;
-		audio_pause_sync_group(global.musicSync);	
+		if (global.audioSyncGroup)
+		{
+			audio_pause_sync_group(global.musicSync);
+		}
+		else
+		{
+			audio_pause_sound(global.songId);
+			audio_pause_sound(global.voicesId);
+		}
 	}
 }
 

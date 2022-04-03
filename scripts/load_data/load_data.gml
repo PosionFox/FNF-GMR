@@ -17,6 +17,7 @@ function load_data(){
 	global.advancedHud = ini_read_real("Options", "AdvancedHud", false);
 	global.offset = ini_read_real("Options", "Offset", 0);
 	global.downScroll = ini_read_real("Options", "Downscroll", false);
+	global.audioSyncGroup = ini_read_real("Options", "AudioSyncGroup", false);
 	
 	global.particles = ini_read_real("Graphics", "Particles", true);
 	gpu_set_texfilter(ini_read_real("Graphics", "Smoothing", true));

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Lunchbox.ogg",
-  "duration": 29.549,
+  "duration": 29.544,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

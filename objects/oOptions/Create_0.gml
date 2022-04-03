@@ -1,5 +1,5 @@
 curSelected = 0;
-optionAmount[0] = 5;
+optionAmount[0] = 6;
 optionAmount[1] = 3;
 optionAmount[2] = 6;
 
@@ -9,3 +9,13 @@ discord = false;
 if (instance_exists(oDiscord)) discord = true;
 
 category = 0;
+
+input = {
+	enter : false,
+	up : false,
+	down : false,
+	left : false,
+	right : false,
+	back : false
+}
+

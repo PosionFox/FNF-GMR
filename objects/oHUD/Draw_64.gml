@@ -47,7 +47,15 @@ draw_set_font(fntDefault);
 
 if (global.advancedHud) or (global.auto) {
 	// timer
-	var curTime = audio_sync_group_get_track_pos(global.musicSync);
+	var curTime;
+	if (global.audioSyncGroup)
+	{
+		curTime = audio_sync_group_get_track_pos(global.musicSync);
+	}
+	else
+	{
+		curTime = audio_sound_get_track_position(global.songId);
+	}
 	var leng = audio_sound_length(global.song) - 0.1;
 
 	draw_pie(1242, 675, curTime, leng, c_white, 30, 0.8);
