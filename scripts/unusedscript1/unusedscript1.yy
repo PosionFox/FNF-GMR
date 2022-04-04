@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Saving & Loading.yy",
   },
   "resourceVersion": "1.0",
-  "name": "load_chart",
+  "name": "unusedscript1",
   "tags": [],
   "resourceType": "GMScript",
 }
