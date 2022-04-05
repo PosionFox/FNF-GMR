@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Roses_Voices.ogg",
-  "duration": 91.95792,
+  "duration": 91.95292,
   "parent": {
     "name": "Roses",
     "path": "folders/Sounds/Music/Week 6/Roses.yy",

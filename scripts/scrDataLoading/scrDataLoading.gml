@@ -36,8 +36,10 @@ function load_data()
 	ini_close();
 }
 
-function loadSongData(_file)	// takes in a file and returns a struct
+function loadSongData(_file)	// jsontoini overseeder, takes in a file and returns a struct
 {
+	show_debug_message("trying to load song:");
+	show_debug_message(_file);
 	var _data;
 	if (file_exists(_file))
 	{
@@ -54,26 +56,31 @@ function loadSongData(_file)	// takes in a file and returns a struct
 	}
 	
 	var notes_output = ds_grid_create(8,16);
-	var songStruct = _data.song;
-	var notesArray = songStruct.notes;
+	var songStruct = _data.song;	// fetch the actual song object
+	
+	var player = songStruct.player1;
+	var opponent = songStruct.player2;
+	
+	var songName = songStruct.song;
+	var sections = songStruct.notes;
 	
 	var bpm = songStruct.bpm;
 	var bps = bpm / 60;
-	var noteSpeed = songStruct.speed; // bpm / 20
+	var noteSpeed = songStruct.speed;	// bpm / 20;
 	var camSpeed = bpm * 2.6;
 	var posCoefficient = noteSpeed * (100 / (camSpeed / 48));
 	var pixelsToSeconds = noteSpeed * 120;
 	
 	var lastSection = 1;
 	
-	for (var i = 0; i < array_length(notesArray); i++)
+	for (var i = 0; i < array_length(sections); i++)	// loop sections content
 	{
-		var section_notes = notesArray[i].sectionNotes;
-		var length_in_steps = notesArray[i].lengthInSteps;
-		var type_of_section = notesArray[i].typeOfSection;
-		var must_hit_section = notesArray[i].mustHitSection;
+		var section_notes = sections[i][$ "sectionNotes"];
+		var length_in_steps = sections[i][$ "lengthInSteps"];
+		var type_of_section = sections[i][$ "typeOfSection"];
+		var must_hit_section = sections[i][$ "mustHitSection"];
 		
-		for (var j = 0; j < array_length(section_notes); j++)
+		for (var j = 0; j < array_length(section_notes); j++)	// loop notes content
 		{
 			var note = section_notes[j];
 			var chartTime = note[0];
@@ -97,11 +104,13 @@ function loadSongData(_file)	// takes in a file and returns a struct
 		}
 	}
 	
-	var trueSongName = string_copy(_file, string_last_pos("\\", _file) + 1, string_length(_file));
-	trueSongName = string_copy(trueSongName, 0, string_last_pos(".", trueSongName) - 1);
-	if (string_pos("-", trueSongName)) trueSongName = string_copy(trueSongName, 0, string_last_pos("-", trueSongName) - 1);
-	trueSongName = string_replace_all(trueSongName, "-", "_");
-	trueSongName = string_upper_first(string_lower(trueSongName));
+	//var trueSongName = string_copy(_file, string_last_pos("\\", _file) + 1, string_length(_file));
+	//trueSongName = string_copy(trueSongName, 0, string_last_pos(".", trueSongName) - 1);
+	//if (string_pos("-", trueSongName)) trueSongName = string_copy(trueSongName, 0, string_last_pos("-", trueSongName) - 1);
+	//trueSongName = string_replace_all(trueSongName, "-", "_");
+	//trueSongName = string_upper_first(string_lower(trueSongName));
+	var trueSongName = string_replace_all(songName, "-", "_");
+	var trueSongName = string_replace_all(trueSongName, " ", "_");
 	
 	var trueDif = string_copy(_file, string_last_pos("-", _file) + 1, string_length(_file));
 	var _difficulty;
@@ -114,6 +123,9 @@ function loadSongData(_file)	// takes in a file and returns a struct
 	}
 	
 	var _songData = {	// build the song data struct
+		player1 : player,
+		player2 : opponent,
+		song : songName,
 		name : trueSongName,
 		instFile : trueSongName + "_Inst",
 		voiceFile : trueSongName + "_Voices",
@@ -121,9 +133,9 @@ function loadSongData(_file)	// takes in a file and returns a struct
 		noteOutput : ds_grid_write(notes_output),
 		camSpeed : camSpeed,
 		bpm : bpm,
-		noteSpeed : noteSpeed,
+		speed : noteSpeed,
 		enemy : 1,
-		notes : notesArray
+		notes : sections
 	};
 	
 	return _songData;

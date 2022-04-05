@@ -1,5 +1,5 @@
 // used bopping code, readded
-if (global.enemy = 5) {
+//if (global.enemy = 5) {
 hudBopVsp += 0.1;
 if (hudBopScale > 0) hudBopScale -= hudBopVsp;
 if (hudBopScale < 0) hudBopScale = 0;
@@ -10,7 +10,7 @@ if (hudBopTimer >= 120) {
 	hudBopTimer = 0;
 }
 hudBopTimer += (global.bpm / 60) * global.deltaMultiplier;
-}
+//}
 
 // calculate deltatime
 actualDelta = DT;
@@ -54,7 +54,7 @@ if (variable_global_exists("musicSync") and global.songIsPlaying)
 
 // when the song has ended
 //if (timeUntilMoveOn >= 420) && !(global.dead) && (keyboard_check_pressed(vk_enter)) {
-if (timeUntilMoveOn >= 420) && !(global.dead) {
+if (timeUntilMoveOn >= 210) && !(global.dead) {
 	global.songIsPlaying = false;
 	var roomTo = MainGame;
 	
@@ -69,17 +69,20 @@ if (timeUntilMoveOn >= 420) && !(global.dead) {
 	}
 	
 	// load the next songs chart
-	load_chart(global.nextSong[global.songOn], global.currentDif);
+	loadSongChart(global.nextSong[global.songOn]);
+	//load_chart(global.nextSong[global.songOn], global.currentDif);
 
 	if (global.auto) global.curScore = 0;
 	global.songScore[global.songOn] = global.curScore;
 	
 	// if the next song does not exist
-	if (global.nextSong[global.songOn] = "n") {
+	if (global.nextSong[global.songOn] = "n")
+	{
 		roomTo = StoryMenu;
 		audio_play_sound(freakyMenu, 10, true);
 		var totalScore = 0;
-		for (var i = 0; i <= global.songOn; ++i) {
+		for (var i = 0; i <= global.songOn; ++i)
+		{
 		    totalScore += global.songScore[i];
 		}
 		
@@ -98,14 +101,19 @@ if (timeUntilMoveOn >= 420) && !(global.dead) {
 	
 	// fade out
 	if (global.freeplay) roomTo = FreePlay;
-	if !(roomTo = MainGame) {
+	if !(roomTo = MainGame)
+	{
 		var o = instance_create_depth(0, 0, -10000, oFade);
 		o.roomTo = roomTo;
-	} else {
-		oldCamX = oCamera.x;
-		oldCamY = oCamera.y;
+	}
+	else
+	{
+		if (instance_exists(oCamera))
+		{
+			oldCamX = oCamera.x;
+			oldCamY = oCamera.y;
+		} else { show_debug_message("camera does not exist!"); }
 		room_goto(roomTo);	
-		
 	}
 	audio_destroy_sync_group(global.musicSync);
 	timeUntilMoveOn = 0;

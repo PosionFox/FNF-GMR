@@ -2,8 +2,8 @@ if (instance_exists(oCutscene)) exit;
 if (instance_exists(oFade)) exit;
 if (finished) exit;
 
-if !(surface_exists(global.hudSurface)) exit;
-surface_set_target(global.hudSurface);
+//if !(surface_exists(global.hudSurface)) exit;
+//surface_set_target(global.hudSurface);
 
 // bg
 draw_set_color(c_white);
@@ -37,4 +37,4 @@ draw_text_ext(x - 360, y - 70, fullText, 40, 760);
 draw_set_color(c_white);
 draw_set_font(fntDefault);
 
-surface_reset_target();
+//surface_reset_target();

@@ -1,10 +1,16 @@
-if !(global.customFreeplay) special_backgrounds(curEnemy);
-else {
+
+if !(global.customFreeplay)
+{
+	special_backgrounds(curEnemy);
+}
+else
+{
 	var songFrame;
-	switch songs[curSelected] {
-		default: songFrame = 0; break;
+	switch songsList[curSelected]
+	{
 		case "stress": songFrame = 1; break;
+		default: songFrame = 0; break;
 	}
 	draw_sprite(sBackgroundCustom, songFrame, 0, 0);
-		
 }
+
