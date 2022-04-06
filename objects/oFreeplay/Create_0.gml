@@ -1,9 +1,20 @@
-load_freeplay(global.specialSongs);
+
+songsList = load_freeplay();
+songData = undefined;
+
+input = {
+	enter : false,
+	up : false,
+	down : false,
+	left : false,
+	right : false,
+	back : false
+}
 
 curEnemy = 0;
 
 difSelected = 1;
-curSelected = array_length(songs) - 1;
+curSelected = array_length(songsList) - 1;
 lastSelected = -1;
 timer = 20;
 
@@ -16,7 +27,8 @@ visibleScore = 0;
 
 addToPath = "";
 
-yOffset = array_create(array_length(songs))
-xOffset = array_create(array_length(songs))
+yOffset = array_create(array_length(songsList));
+xOffset = array_create(array_length(songsList));
 
 iconYOffset = 0;
+

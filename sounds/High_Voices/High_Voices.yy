@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "High_Voices.mp3",
-  "duration": 105.61805,
+  "duration": 105.613052,
   "parent": {
     "name": "High",
     "path": "folders/Sounds/Music/Week 4/High.yy",

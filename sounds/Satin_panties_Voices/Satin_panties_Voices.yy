@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Satin_panties_Voices.ogg",
-  "duration": 96.03112,
+  "soundFile": "Satin_Panties_Voices.ogg",
+  "duration": 96.02612,
   "parent": {
     "name": "Satin Panties",
     "path": "folders/Sounds/Music/Week 4/Satin Panties.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Satin_panties_Voices",
+  "name": "Satin_Panties_Voices",
   "tags": [],
   "resourceType": "GMSound",
 }

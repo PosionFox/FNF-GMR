@@ -1,6 +1,6 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function jsontoini(){
+
+function jsontoini() // made obsolete by loadSongData()
+{
 	var json_filename = get_open_filename_ext("FNF Song Data|*.json", "", "", "Select a FNF Song File");
 	if (json_filename = "") exit;
 	var json_id = file_text_open_read(json_filename);

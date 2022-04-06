@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "High_Inst.mp3",
-  "duration": 105.605,
+  "duration": 105.6,
   "parent": {
     "name": "High",
     "path": "folders/Sounds/Music/Week 4/High.yy",

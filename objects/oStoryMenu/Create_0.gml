@@ -24,3 +24,13 @@ selected = false;
 selectedTimer = 0;
 
 scorDisplay = 0;
+
+input = {
+	enter : false,
+	up : false,
+	down : false,
+	left : false,
+	right : false,
+	back : false
+}
+

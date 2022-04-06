@@ -1,5 +1,7 @@
 // chart info
+
 global.chart = ds_grid_create(8, 16);
+global.chartNotes = [];
 global.song = Tutorial_Inst;
 global.voices = "";
 global.songId = 0;
