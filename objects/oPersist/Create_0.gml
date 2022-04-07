@@ -1,5 +1,6 @@
 // chart info
 
+//global.intactSongData = undefined;
 global.chart = ds_grid_create(8, 16);
 global.chartNotes = [];
 global.song = Tutorial_Inst;
@@ -15,6 +16,7 @@ global.boyfriend = "og";
 global.roomBefore = room;
 
 global.songIsPlaying = false;
+global.previousLoadedSprites = [];
 
 // voice muting
 global.playVoice = 1;
@@ -82,7 +84,7 @@ global.backKeybind = 88;
 
 // week variables
 global.freeplay = false;
-global.weeks = 7;
+global.weeks = 6;
 for (var i = 0; i < global.weeks + 1; ++i) {
 	global.weekScoreEasy[i] = 0;
 	global.weekScoreNormal[i] = 0;
@@ -108,6 +110,7 @@ enum notes {
 // gui
 volumeDisplay = 0;
 timeUntilMoveOn = 0;
+timeUntilMoveOnMax = 210;
 
 // check where data should be saved / loaded
 // if useprogramdir is on, it will check in where the program is stored

@@ -26,7 +26,8 @@ if (volumeDisplay > 0) {
 }
 
 // ranking screen
-if (timeUntilMoveOn >= 420) {
+if (timeUntilMoveOn >= timeUntilMoveOnMax)
+{
 	var curMiss = oHUD.missCount;
 	var curHit = oHUD.hitCount;
 	var acc = curHit / (curHit + curMiss);

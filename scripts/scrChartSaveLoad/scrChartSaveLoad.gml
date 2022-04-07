@@ -59,7 +59,7 @@ function load_chart(songNam, dif)
 }
 
 
-function saveSongChart(_file)
+function saveSongChart(_file) // wip
 {
 	// save all the songs data
 	var dataStruct = {
@@ -72,10 +72,10 @@ function saveSongChart(_file)
 		player1 = "bf";
 		player2 = "dad";
 		validScore = true;
-		sections = 0;
+		sections = 16;
 		needsVoices = true;
 		bpm = global.bpm;
-		speed = global.noteSpeed / 3.2;
+		speed = global.noteSpeed / 4;
 		
 		notes = global.chartNotes;
 	}
@@ -115,6 +115,8 @@ function loadSongChart(_name)
 	
 	var songStruct = loadSongData(directory);
 	if (songStruct == -1) { exit; }
+	
+	//global.intactSongData = songStruct;
 	
 	_parsedName = string_replace_all(songStruct.song, "-", "_");
 	_parsedName = string_replace_all(_parsedName, " ", "_");
