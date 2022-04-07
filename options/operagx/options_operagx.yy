@@ -1,6 +1,6 @@
 {
-  "option_operagx_version": "0.0.0.5",
-  "option_operagx_next_version": "0.0.0.6",
+  "option_operagx_version": "0.0.0.6",
+  "option_operagx_next_version": "0.0.0.7",
   "option_operagx_game_name": "Friday Night Funkin GMR",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_scale": 0,
@@ -10,7 +10,7 @@
   "option_operagx_team_name": "posionfox studio",
   "option_operagx_editUrl": "https://dc.gxc.gg/home/games/game/b2a0e61c-8845-4b75-bf3b-b62b8bf78793/edit",
   "option_operagx_internalShareUrl": "https://gxc.gg",
-  "option_operagx_publicShareUrl": "",
+  "option_operagx_publicShareUrl": "https://gxc.gg",
   "resourceVersion": "1.0",
   "name": "operagx",
   "tags": [],
