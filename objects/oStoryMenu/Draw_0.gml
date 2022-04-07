@@ -35,16 +35,16 @@ draw_sprite_ext(sDifArrow, 0, 700, 524, leftArrowScale, leftArrowScale, 0, c_whi
 draw_sprite(sDifs, global.currentDif, 906, 524 + difOffset); // left
 draw_sprite_ext(sDifArrow, 1, 1110, 524, rightArrowScale, rightArrowScale, 0, c_white, 1); // right
 
-if (global.currentDif != 2) {
-	 // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
-	draw_sprite(sDifsLock, 0, 906, 524  + difOffset);
+//if (global.currentDif != 2) {
+//	 // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
+//	draw_sprite(sDifsLock, 0, 906, 524  + difOffset);
 	
-	draw_set_halign(fa_right);
-	draw_set_valign(fa_bottom);
-	draw_text(1260, 700, "NORMAL and EASY difficultys are temporarily disabled\ndue to having no time to finish them.\n\nIf you would like to help, contact me. :D")
-	draw_set_valign(fa_top);
-	draw_set_halign(fa_left);
-}
+//	draw_set_halign(fa_right);
+//	draw_set_valign(fa_bottom);
+//	draw_text(1260, 700, "NORMAL and EASY difficultys are temporarily disabled\ndue to having no time to finish them.\n\nIf you would like to help, contact me. :D")
+//	draw_set_valign(fa_top);
+//	draw_set_halign(fa_left);
+//}
 
 // text
 var curWeekScore = global.weekScoreEasy[selectedWeek];

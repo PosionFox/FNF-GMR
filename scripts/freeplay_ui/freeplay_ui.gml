@@ -46,6 +46,6 @@ function freeplay_ui(){
 
 		// dif
 		draw_sprite(sDifsAlt, difSelected, 1074, 50);
-		if (difSelected != 2) draw_sprite(sDifsLock, 0, 1074, 50);  // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
+		//if (difSelected != 2) draw_sprite(sDifsLock, 0, 1074, 50);  // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
 	}
 }

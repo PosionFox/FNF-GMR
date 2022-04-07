@@ -57,7 +57,7 @@ if !(global.auto) {
 	// death
 	if (global.hp <= 0) && !(global.dead) && !(global.nofail) {
 		global.dead = true;
-		
+		global.songIsPlaying = false;
 		// stop all music
 		audio_stop_all();
 		audio_destroy_sync_group(global.musicSync);

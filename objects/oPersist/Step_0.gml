@@ -54,7 +54,8 @@ if (variable_global_exists("musicSync") and global.songIsPlaying)
 
 // when the song has ended
 //if (timeUntilMoveOn >= 420) && !(global.dead) && (keyboard_check_pressed(vk_enter)) {
-if (timeUntilMoveOn >= 210) && !(global.dead) {
+if (timeUntilMoveOn >= timeUntilMoveOnMax) && !(global.dead)
+{
 	global.songIsPlaying = false;
 	var roomTo = MainGame;
 	
@@ -116,6 +117,8 @@ if (timeUntilMoveOn >= 210) && !(global.dead) {
 		room_goto(roomTo);	
 	}
 	audio_destroy_sync_group(global.musicSync);
+	flushPlayerSprites();
+	flushOpponentSprites();
 	timeUntilMoveOn = 0;
 }
 

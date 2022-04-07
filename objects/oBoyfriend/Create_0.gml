@@ -55,4 +55,6 @@ deathAnimCooldown = 0;
 
 spriteUsed = sprLeft;
 
+//prefetchPlayerSprites();
+
 beforeAA = gpu_get_texfilter();

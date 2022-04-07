@@ -41,6 +41,8 @@ if ((keyboard_check_pressed(vk_enter))
 			audio_play_sound(freakyMenu, 10, true);
 			timer = 300;
 			global.songIsPlaying = false;
+			flushPlayerSprites();
+			flushOpponentSprites();
 			break;
 	}
 }

@@ -87,6 +87,7 @@ function boyfriend_sprites() {
 	
 	sprCheer = sBoyfriendCheer;
 	sprDeath = sBoyfriendDie;
+	
 	if (global.enemy = 102) or (global.boyfriend == "codist") sprCheer = sBoyfriendCodCheer;
 	if (sprite_exists(asset_get_index(char + add + "Die"))) sprDeath = asset_get_index(char + add + "Die");
 }
