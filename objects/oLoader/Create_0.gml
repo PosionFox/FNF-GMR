@@ -24,6 +24,7 @@ if (instance_exists(oEnemy))
 
 progress = 0;
 progressMax = array_length(spritesToLoad) - 1;
+progressDisplay = 0;
 
 if (os_type == os_operagx)
 {

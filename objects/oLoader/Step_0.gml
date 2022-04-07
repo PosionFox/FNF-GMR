@@ -20,3 +20,4 @@ if (!ready and os_type != os_operagx)
 	}
 }
 
+progressDisplay = lerp(progressDisplay, progress, 0.1);
