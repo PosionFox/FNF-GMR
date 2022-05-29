@@ -17,8 +17,8 @@
   "width": 554,
   "height": 809,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "tgWeek1",
+    "path": "texturegroups/tgWeek1",
   },
   "swatchColours": null,
   "gridX": 0,

@@ -13,4 +13,6 @@ afterCreate = false;
 
 if (global.downScroll) image_yscale = -image_yscale;
 
+notesHitList = ds_list_create();
+
 event_inherited();

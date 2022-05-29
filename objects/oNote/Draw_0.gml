@@ -10,4 +10,5 @@ if !(global.dead) {
 	
 	if !(heldAlready) && !(notRealNote) draw_self();
 }
+//draw_text(x, y, sliderLength);
 surface_reset_target();

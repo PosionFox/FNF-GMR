@@ -88,7 +88,7 @@ function loadSongData(_file)	// jsontoini overseeder, takes in a file and return
 			var _noteDuration = note[2];
 			if (is_string(_noteDuration)) { _noteDuration = 0; }	// ignore strings
 			var noteDuration = _noteDuration / 14.151;	//magic
-			if (noteDuration > 1) { noteDuration--; }
+			//if (noteDuration > 1) { noteDuration--; }
 			
 			var calculatedPos = chartTime * pixelsToSeconds / 1000;
 			var noteY = calculatedPos / posCoefficient;

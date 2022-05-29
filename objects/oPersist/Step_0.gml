@@ -19,26 +19,32 @@ global.deltaMultiplier = actualDelta/targetDelta;
 // check if song ended
 if (variable_global_exists("musicSync") and global.songIsPlaying)
 {
-	var curTime;
-	var finalTime;
-	if (global.audioSyncGroup)
+	var curTime = 0;
+	var finalTime = 0;
+	var _audio = global.musicSync;
+	var f_pos = audio_sync_group_get_track_pos;
+	var f_playing = audio_sync_group_is_playing;
+	
+	if (!global.audioSyncGroup)
 	{
-		curTime = audio_sync_group_get_track_pos(global.musicSync);
-		finalTime = audio_sound_length(global.song);
+		_audio = global.songId;
+		f_pos = audio_sound_get_track_position;
+		f_playing = audio_is_playing;
 	}
-	else
+	
+	curTime = f_pos(_audio);
+	finalTime = audio_sound_length(_audio);
+	
+	if (!f_playing(_audio))
 	{
-		curTime = audio_sound_get_track_position(global.songId);
-		finalTime = audio_sound_length(global.songId);
+		timeUntilMoveOn++;
 	}
+	
 	//if (finalTime <= 0) // fix song skip early
 	//{
 	//	finalTime = 100;
 	//}
-	if (!audio_is_playing(global.songId))
-	{
-		timeUntilMoveOn++;
-	}
+	
 	//if (curTime >= finalTime - 1.1) && (room = MainGame)
 	//{
 	//	timeUntilMoveOn++;
