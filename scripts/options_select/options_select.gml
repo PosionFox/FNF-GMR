@@ -24,7 +24,10 @@ function options_select(category, option)
 				case 5: // downscroll
 					global.downScroll = !global.downScroll;
 				break;
-				case 6: // audio sync group
+				case 6:
+					global.ghostTapping = !global.ghostTapping;
+				break;
+				case 7: // audio sync group
 					global.audioSyncGroup = !global.audioSyncGroup;
 				break;
 			}

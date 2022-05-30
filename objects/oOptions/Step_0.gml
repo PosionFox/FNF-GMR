@@ -1,3 +1,4 @@
+
 fullscreenOption = window_get_fullscreen();
 smoothingOption = gpu_get_texfilter();
 

@@ -66,13 +66,18 @@ global.bSides = false;
 global.offset = 0;
 global.advancedHud = false;
 global.downScroll = false;
-global.audioSyncGroup = false;
 
 global.volume = 1;
 global.controller = 1;
 
 global.particles = true;
 global.customFreeplay = true;
+
+global.fullscreen = false;
+global.audioSyncGroup = false;
+global.ghostTapping = true;
+global.discordEnabled = false;
+global.antiAliasing = true;
 
 // controls
 global.leftKeybind = 65;

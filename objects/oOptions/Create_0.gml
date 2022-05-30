@@ -1,3 +1,8 @@
+
+instance_create_depth(x, y, depth, oSettings);
+instance_destroy();
+exit;
+
 curSelected = 0;
 optionAmount[0] = 6;
 optionAmount[1] = 3;

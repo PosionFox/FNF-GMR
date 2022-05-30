@@ -21,18 +21,27 @@ if !(global.dead) {
 }
 else image_speed = global.deltaMultiplier; // if dead change the image speed to 1 (deltaMultiplier should always equal something close to 1 depending on lag)
 
-if !(global.auto) {
+if !(global.auto)
+{
 	// not auto mode code
 	
 	// check for arrow keys
 	// activate the animation when keys are pressed
-	function noteCheck(key, altKey, controllerKey, dir) {
+	function noteCheck(key, altKey, controllerKey, dir)
+	{
 		if (keyboard_check_pressed(key)) || (keyboard_check_pressed(altKey))
-		|| (gamepad_button_check_pressed(global.controller, controllerKey)) {
-			notePlaying = dir;
-			animCount = 45;
-			if (missed) animCount = 70;
-			singFrame = 0;
+		|| (gamepad_button_check_pressed(global.controller, controllerKey))
+		{
+			if (missed)
+			{
+				animCount = 70;
+			}
+			else
+			{
+				notePlaying = dir;
+				animCount = 45;
+				singFrame = 0;
+			}
 		}
 	}
 	// subtract the time the animation is playing for

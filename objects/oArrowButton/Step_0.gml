@@ -23,7 +23,14 @@ if !(enemy) && !(global.auto)
 		image_speed = 1;
 		image_index = 0;
 		
-		oBoyfriend.missed = false;
+		if (global.ghostTapping)
+		{
+			oBoyfriend.missed = false;
+		}
+		else
+		{
+			oBoyfriend.missed = true;
+		}
 		
 		// jack handling
 		var notesHit = instance_place_list(x, y, oNote, notesHitList, true);
@@ -39,7 +46,7 @@ if !(enemy) && !(global.auto)
 		}
 		// ---
 		
-		if (!instance_exists(currentNote) and collision_line(x, y - 192, x, y + 192, oNote, false, true))
+		if (global.ghostTapping and !instance_exists(currentNote) and collision_line(x, y - 192, x, y + 192, oNote, false, true))
 		{
 			oBoyfriend.missed = true;
 		}
