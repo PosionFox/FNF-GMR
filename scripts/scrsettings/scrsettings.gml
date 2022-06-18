@@ -73,19 +73,27 @@ function SettingInt(_name = "int", _desc = "", _var, _min = 0, _max = 1, _cb) : 
 	{
 		if (keyboard_check(vk_shift))
 		{
-			value++;
-			value = min(value, thresholdMax);
-			callback();
+			value += 5;
 		}
+		else
+		{
+			value++;
+		}
+		value = min(value, thresholdMax);
+		callback();
 	}
 	static pressLeft = function()
 	{
 		if (keyboard_check(vk_shift))
 		{
-			value--;
-			value = max(value, thresholdMin);
-			callback();
+			value -= 5;
 		}
+		else
+		{
+			value--;
+		}
+		value = max(value, thresholdMin);
+		callback();
 	}
 }
 

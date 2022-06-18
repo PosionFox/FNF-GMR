@@ -1,10 +1,6 @@
 draw_set_font(global.font);
 //draw_set_font(fntDefault);
 
-draw_set_halign(fa_center);
-draw_text_color(640, 20 - menuIndex * 70, currentMenu.name, c_white, c_white, c_fuchsia, c_fuchsia, 1);
-draw_set_halign(fa_left);
-
 var _len = array_length(currentMenu.options);
 for (var i = 0; i < _len; i++)
 {
@@ -20,6 +16,10 @@ for (var i = 0; i < _len; i++)
 		draw_set_halign(fa_left);
 	}
 }
+
+draw_set_halign(fa_center);
+draw_text_color(640, 20, currentMenu.name, c_white, c_white, c_fuchsia, c_fuchsia, 1);
+draw_set_halign(fa_left);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
