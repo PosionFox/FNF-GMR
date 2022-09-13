@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sWhittyDown",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,10 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"04c1de57-2110-4382-821f-a6697c0c5a1a","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"ad1719fd-2665-4a0b-8a6a-eddb90cbf0e4","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04c1de57-2110-4382-821f-a6697c0c5a1a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad1719fd-2665-4a0b-8a6a-eddb90cbf0e4",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sWhittyDown",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -35,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b4342be3-2c36-43a0-82ea-a3e622bcfbf0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04c1de57-2110-4382-821f-a6697c0c5a1a","path":"sprites/sWhittyDown/sWhittyDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a8c3d393-9f2c-4dbb-b260-00d18f3c65f9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad1719fd-2665-4a0b-8a6a-eddb90cbf0e4","path":"sprites/sWhittyDown/sWhittyDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b4342be3-2c36-43a0-82ea-a3e622bcfbf0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04c1de57-2110-4382-821f-a6697c0c5a1a","path":"sprites/sWhittyDown/sWhittyDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a8c3d393-9f2c-4dbb-b260-00d18f3c65f9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad1719fd-2665-4a0b-8a6a-eddb90cbf0e4","path":"sprites/sWhittyDown/sWhittyDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -57,19 +63,13 @@
     "yorigin": 770,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sWhittyDown",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fdcf784c-4d7a-44b6-9efc-d4612ad6edd3","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fdcf784c-4d7a-44b6-9efc-d4612ad6edd3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Normal",
     "path": "folders/Sprites/Characters/Extra/Whitty?/Normal.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sWhittyDown",
-  "resourceType": "GMSprite",
 }

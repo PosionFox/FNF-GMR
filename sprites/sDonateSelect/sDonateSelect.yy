@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sDonateSelect",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,11 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"cc0b71d5-97ef-41ad-9255-a949ba41c100","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"41e02e95-9370-4945-909e-12e594c5825f","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"88f0ac5c-ecf5-4c94-b2cd-99e59353b2e7","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc0b71d5-97ef-41ad-9255-a949ba41c100",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"41e02e95-9370-4945-909e-12e594c5825f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"88f0ac5c-ecf5-4c94-b2cd-99e59353b2e7",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sDonateSelect",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 20.0,
@@ -36,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"539a57fb-9044-4b27-84a9-a9448b8ac8f9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc0b71d5-97ef-41ad-9255-a949ba41c100","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"961f8004-03ab-499d-8024-569cf8fcd5ee","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"41e02e95-9370-4945-909e-12e594c5825f","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f947f949-6c0c-4bcc-92a8-34d453fb84ff","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"88f0ac5c-ecf5-4c94-b2cd-99e59353b2e7","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"539a57fb-9044-4b27-84a9-a9448b8ac8f9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc0b71d5-97ef-41ad-9255-a949ba41c100","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"961f8004-03ab-499d-8024-569cf8fcd5ee","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"41e02e95-9370-4945-909e-12e594c5825f","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f947f949-6c0c-4bcc-92a8-34d453fb84ff","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"88f0ac5c-ecf5-4c94-b2cd-99e59353b2e7","path":"sprites/sDonateSelect/sDonateSelect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,19 +65,13 @@
     "yorigin": 104,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sDonateSelect",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"978ece75-2d2e-43ab-a5d8-6ede455ae67d","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"978ece75-2d2e-43ab-a5d8-6ede455ae67d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MainMenu",
     "path": "folders/Sprites/Other/MainMenu.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sDonateSelect",
-  "resourceType": "GMSprite",
 }

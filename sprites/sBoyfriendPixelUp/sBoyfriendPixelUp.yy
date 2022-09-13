@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sBoyfriendPixelUp",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,10 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"bdb13a05-6169-4f59-af65-8d11106ab0d7","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"d95ec9c3-5913-483c-b936-442a0777478c","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdb13a05-6169-4f59-af65-8d11106ab0d7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d95ec9c3-5913-483c-b936-442a0777478c",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sBoyfriendPixelUp",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -35,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2e01aa75-55c0-4220-b372-bbd840957aa8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bdb13a05-6169-4f59-af65-8d11106ab0d7","path":"sprites/sBoyfriendPixelUp/sBoyfriendPixelUp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5d23cdf8-5e5b-4f7e-b136-06863d49fc85","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d95ec9c3-5913-483c-b936-442a0777478c","path":"sprites/sBoyfriendPixelUp/sBoyfriendPixelUp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"2e01aa75-55c0-4220-b372-bbd840957aa8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bdb13a05-6169-4f59-af65-8d11106ab0d7","path":"sprites/sBoyfriendPixelUp/sBoyfriendPixelUp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5d23cdf8-5e5b-4f7e-b136-06863d49fc85","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d95ec9c3-5913-483c-b936-442a0777478c","path":"sprites/sBoyfriendPixelUp/sBoyfriendPixelUp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -57,19 +63,13 @@
     "yorigin": 70,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sBoyfriendPixelUp",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pixel",
     "path": "folders/Sprites/Characters/Boyfriend/Pixel.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sBoyfriendPixelUp",
-  "resourceType": "GMSprite",
 }

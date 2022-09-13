@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sBoyfriendChristLeftMiss",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,10 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"9111724b-5a30-4708-97d2-b23b5c750a47","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"a9026a14-1dbc-4d68-973d-b6e147a9c498","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9111724b-5a30-4708-97d2-b23b5c750a47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9026a14-1dbc-4d68-973d-b6e147a9c498",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sBoyfriendChristLeftMiss",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 25.0,
@@ -35,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4e798489-12c1-4653-a3bd-cc5be07eacaa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9111724b-5a30-4708-97d2-b23b5c750a47","path":"sprites/sBoyfriendChristLeftMiss/sBoyfriendChristLeftMiss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fc26aa89-799e-4f32-9ba6-26b33ca1d823","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9026a14-1dbc-4d68-973d-b6e147a9c498","path":"sprites/sBoyfriendChristLeftMiss/sBoyfriendChristLeftMiss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"4e798489-12c1-4653-a3bd-cc5be07eacaa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9111724b-5a30-4708-97d2-b23b5c750a47","path":"sprites/sBoyfriendChristLeftMiss/sBoyfriendChristLeftMiss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc26aa89-799e-4f32-9ba6-26b33ca1d823","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9026a14-1dbc-4d68-973d-b6e147a9c498","path":"sprites/sBoyfriendChristLeftMiss/sBoyfriendChristLeftMiss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -57,19 +63,13 @@
     "yorigin": 500,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sBoyfriendChristLeftMiss",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6dabfd9d-fd07-4be6-80cb-eecbbec63528","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6dabfd9d-fd07-4be6-80cb-eecbbec63528","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Miss",
     "path": "folders/Sprites/Characters/Boyfriend/Christmas/Miss.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sBoyfriendChristLeftMiss",
-  "resourceType": "GMSprite",
 }

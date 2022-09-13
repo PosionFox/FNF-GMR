@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sBoyfriendPixelLeft",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,10 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"c210f537-d423-4ab7-ae2f-abd6ec206bba","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"8cb9f253-5103-4045-be15-bcfb99a0632e","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c210f537-d423-4ab7-ae2f-abd6ec206bba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8cb9f253-5103-4045-be15-bcfb99a0632e",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sBoyfriendPixelLeft",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -35,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"836313bb-2a4c-4754-9d8c-55cd6433663d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c210f537-d423-4ab7-ae2f-abd6ec206bba","path":"sprites/sBoyfriendPixelLeft/sBoyfriendPixelLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f277ccd1-5a4a-45c1-9dc5-d09a8392ce6a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cb9f253-5103-4045-be15-bcfb99a0632e","path":"sprites/sBoyfriendPixelLeft/sBoyfriendPixelLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"836313bb-2a4c-4754-9d8c-55cd6433663d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c210f537-d423-4ab7-ae2f-abd6ec206bba","path":"sprites/sBoyfriendPixelLeft/sBoyfriendPixelLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f277ccd1-5a4a-45c1-9dc5-d09a8392ce6a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cb9f253-5103-4045-be15-bcfb99a0632e","path":"sprites/sBoyfriendPixelLeft/sBoyfriendPixelLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -57,19 +63,13 @@
     "yorigin": 60,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sBoyfriendPixelLeft",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pixel",
     "path": "folders/Sprites/Characters/Boyfriend/Pixel.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sBoyfriendPixelLeft",
-  "resourceType": "GMSprite",
 }

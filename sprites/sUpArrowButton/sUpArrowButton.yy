@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sUpArrowButton",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,11 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"8b27fedd-743d-45a0-9d74-ba59f8d36bce","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"d3c15476-00d9-4b90-ad76-aa9d3538294e","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"205796f4-49ea-414f-8787-5a2c65d61cd6","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b27fedd-743d-45a0-9d74-ba59f8d36bce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3c15476-00d9-4b90-ad76-aa9d3538294e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"205796f4-49ea-414f-8787-5a2c65d61cd6",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sUpArrowButton",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 60.0,
@@ -36,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b6927c08-528d-43f9-99c4-b213a15013a5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b27fedd-743d-45a0-9d74-ba59f8d36bce","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"115e8a65-5d88-4648-9c7b-d2e7c89a0e29","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3c15476-00d9-4b90-ad76-aa9d3538294e","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"901b70db-3479-47d4-89e4-ca0c15369e05","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"205796f4-49ea-414f-8787-5a2c65d61cd6","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b6927c08-528d-43f9-99c4-b213a15013a5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b27fedd-743d-45a0-9d74-ba59f8d36bce","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"115e8a65-5d88-4648-9c7b-d2e7c89a0e29","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3c15476-00d9-4b90-ad76-aa9d3538294e","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"901b70db-3479-47d4-89e4-ca0c15369e05","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"205796f4-49ea-414f-8787-5a2c65d61cd6","path":"sprites/sUpArrowButton/sUpArrowButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,19 +65,13 @@
     "yorigin": 77,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sUpArrowButton",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b2b093d8-2641-43e7-a06a-1a53e64993f1","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b2b093d8-2641-43e7-a06a-1a53e64993f1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Buttons",
     "path": "folders/Sprites/Arrows/Buttons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sUpArrowButton",
-  "resourceType": "GMSprite",
 }

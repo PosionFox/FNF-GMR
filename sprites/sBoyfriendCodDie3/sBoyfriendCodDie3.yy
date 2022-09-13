@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sBoyfriendCodDie3",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,11 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceVersion":"1.1","name":"83be30a2-3ef2-4bdd-b967-37834fdff898","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"82be296c-8db2-4d12-9262-9dc866dc614e","resourceType":"GMSpriteFrame",},
-    {"resourceVersion":"1.1","name":"0a2a1e3c-59b0-401f-89d5-5b326d449a2e","resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"83be30a2-3ef2-4bdd-b967-37834fdff898",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"82be296c-8db2-4d12-9262-9dc866dc614e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a2a1e3c-59b0-401f-89d5-5b326d449a2e",},
   ],
   "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sBoyfriendCodDie3",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -36,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0f9adc43-f681-4eec-940c-fd2371a5c4e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83be30a2-3ef2-4bdd-b967-37834fdff898","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5e75ce83-31d3-4345-867a-ea743ba60280","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82be296c-8db2-4d12-9262-9dc866dc614e","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e621c6d6-45d0-4aaf-bef4-22ca84c64099","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a2a1e3c-59b0-401f-89d5-5b326d449a2e","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0f9adc43-f681-4eec-940c-fd2371a5c4e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83be30a2-3ef2-4bdd-b967-37834fdff898","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e75ce83-31d3-4345-867a-ea743ba60280","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82be296c-8db2-4d12-9262-9dc866dc614e","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e621c6d6-45d0-4aaf-bef4-22ca84c64099","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a2a1e3c-59b0-401f-89d5-5b326d449a2e","path":"sprites/sBoyfriendCodDie3/sBoyfriendCodDie3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,19 +65,13 @@
     "yorigin": 538,
     "eventToFunction": {},
     "eventStubScript": null,
-    "resourceVersion": "1.4",
-    "name": "sBoyfriendCodDie3",
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3e5c05b-a20b-4a6b-922b-9502dfafec1a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Codist Wtf",
     "path": "folders/Sprites/Characters/Boyfriend/Codist Wtf.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sBoyfriendCodDie3",
-  "resourceType": "GMSprite",
 }
