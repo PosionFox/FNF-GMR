@@ -24,12 +24,9 @@
   "gridX": 40,
   "gridY": 40,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"944cd260-8669-4deb-8a7a-d6b91c703826","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"944cd260-8669-4deb-8a7a-d6b91c703826","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"LayerId":{"name":"36cf884e-ddb1-470a-a41f-2bde8cf62a32","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDebugEditorGrid","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"resourceVersion":"1.0","name":"944cd260-8669-4deb-8a7a-d6b91c703826","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceVersion":"1.1","name":"944cd260-8669-4deb-8a7a-d6b91c703826","resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sDebugEditorGrid","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +34,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"03bb0d94-3490-49b0-a3f8-f016f4d9e4e6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"944cd260-8669-4deb-8a7a-d6b91c703826","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+            {"id":"03bb0d94-3490-49b0-a3f8-f016f4d9e4e6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"944cd260-8669-4deb-8a7a-d6b91c703826","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,14 +55,12 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sDebugEditorGrid","path":"sprites/sDebugEditorGrid/sDebugEditorGrid.yy",},
     "resourceVersion": "1.4",
     "name": "sDebugEditorGrid",
-    "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"36cf884e-ddb1-470a-a41f-2bde8cf62a32","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"36cf884e-ddb1-470a-a41f-2bde8cf62a32","resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -74,6 +69,5 @@
   },
   "resourceVersion": "1.0",
   "name": "sDebugEditorGrid",
-  "tags": [],
   "resourceType": "GMSprite",
 }

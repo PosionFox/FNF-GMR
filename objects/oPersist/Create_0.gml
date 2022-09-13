@@ -1,4 +1,5 @@
 // chart info
+surface_depth_disable(true);
 
 //global.intactSongData = undefined;
 global.chart = ds_grid_create(8, 16);

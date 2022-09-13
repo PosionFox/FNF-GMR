@@ -24,12 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7a0436c6-487a-46f8-b802-45773d679f71","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7a0436c6-487a-46f8-b802-45773d679f71","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"LayerId":{"name":"2261e9c6-62cf-4de6-a4a2-7b2c6ed5973e","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Runner_daz7BsXtla","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"resourceVersion":"1.0","name":"7a0436c6-487a-46f8-b802-45773d679f71","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceVersion":"1.1","name":"7a0436c6-487a-46f8-b802-45773d679f71","resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Runner_daz7BsXtla","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +34,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"68520a86-7c22-4ced-859d-c11bc2713918","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a0436c6-487a-46f8-b802-45773d679f71","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+            {"id":"68520a86-7c22-4ced-859d-c11bc2713918","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a0436c6-487a-46f8-b802-45773d679f71","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,14 +55,12 @@
     "yorigin": 540,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Runner_daz7BsXtla","path":"sprites/Runner_daz7BsXtla/Runner_daz7BsXtla.yy",},
     "resourceVersion": "1.4",
     "name": "Runner_daz7BsXtla",
-    "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2261e9c6-62cf-4de6-a4a2-7b2c6ed5973e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2261e9c6-62cf-4de6-a4a2-7b2c6ed5973e","resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -74,6 +69,5 @@
   },
   "resourceVersion": "1.0",
   "name": "Runner_daz7BsXtla",
-  "tags": [],
   "resourceType": "GMSprite",
 }

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Philly_Nice_Voices.ogg",
-  "duration": 101.490715,
+  "duration": 101.48572,
   "parent": {
     "name": "Philly",
     "path": "folders/Sounds/Music/Week 3/Philly.yy",
