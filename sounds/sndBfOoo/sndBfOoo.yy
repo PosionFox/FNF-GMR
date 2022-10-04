@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sndBfOoo",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBfOoo.mp3",
-  "duration": 0.422959,
+  "duration": 0.417959,
   "parent": {
     "name": "Boyfriend Sounds",
     "path": "folders/Sounds/Boyfriend Sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sndBfOoo",
-  "tags": [],
-  "resourceType": "GMSound",
 }

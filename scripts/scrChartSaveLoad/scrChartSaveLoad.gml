@@ -69,10 +69,11 @@ function saveSongChart(_file) // wip
 	with (dataStruct.song)
 	{
 		song = global.songName;
-		player1 = "bf";
-		player2 = "dad";
+		player1 = global.songData[$ "player1"];
+		player2 = global.songData[$ "player2"];
+		sectionLengths = [];
 		validScore = true;
-		sections = 16;
+		sections = 0;
 		needsVoices = true;
 		bpm = global.bpm;
 		speed = global.noteSpeed / 4;
@@ -114,7 +115,11 @@ function loadSongChart(_name)
 	var _parsedName;
 	
 	var songStruct = loadSongData(directory);
-	if (songStruct == -1) { exit; }
+	if (songStruct == -1)
+	{
+		show_debug_message("could not load song data");
+		return songStruct;
+	}
 	
 	//global.intactSongData = songStruct;
 	
@@ -122,7 +127,14 @@ function loadSongChart(_name)
 	_parsedName = string_replace_all(_parsedName, " ", "_");
 	show_debug_message("parsed song name: " + _parsedName);
 	
+	global.songData = songStruct;
 	global.songName = songStruct.song;
+	global.stage = global.songData[$ "stage"];
+	if (global.stage == undefined)
+	{
+		global.stage = stage_autodetect_by_song(global.songName);
+	}
+	show_debug_message("stage: " + string(global.stage));
 	global.song = asset_get_index(string(_parsedName) + "_Inst");
 	global.voices = asset_get_index(string(_parsedName) + "_Voices");
 	//if (global.voices != "") { global.voices = asset_get_index(global.voices); }
@@ -133,8 +145,125 @@ function loadSongChart(_name)
 	global.enemy = fetchOpponentId(songStruct.player2);
 	
 	ds_grid_read(global.chart, songStruct.noteOutput);
-	global.chartNotes = songStruct.notes;
+	global.chartNotes = songStruct.notes;	// sections
 	
+}
+
+function stage_autodetect_by_song(songName)
+{
+	switch (string_lower(songName))
+	{
+		case "bopeebo":
+			return "stage";
+		break;
+		case "fresh":
+			return "stage";
+		break;
+		case "dad battle":
+			return "stage";
+		break;
+		
+		case "spookeez":
+			return "spooky";
+		break;
+		case "south":
+			return "spooky";
+		break;
+		case "monster":
+			return "spooky";
+		break;
+		
+		case "pico":
+			return "pico";
+		break;
+		case "philly nice":
+			return "pico";
+		break;
+		case "blammed":
+			return "pico";
+		break;
+		
+		case "satin panties":
+			return "limo";
+		break;
+		case "high":
+			return "limo";
+		break;
+		case "milf":
+			return "limo";
+		break;
+		
+		case "cocoa":
+			return "christmas";
+		break;
+		case "eggnog":
+			return "christmas";
+		break;
+		case "winter horrorland":
+			return "scary";
+		break;
+		
+		case "senpai":
+			return "senpai";
+		break;
+		case "roses":
+			return "senpai";
+		break;
+		case "thorns":
+			return "evilschool";
+		break;
+		case "monochrome":
+			return "darkness";
+		break;
+		
+		default:
+			return "stage";
+		break;
+	}
+}
+
+function stage_get_room(name)
+{
+	switch (name)
+	{
+		case "stage":
+			return rmWeek1;
+		break;
+		case "spooky":
+			return rmWeek2;
+		break;
+		case "pico":
+			return rmWeek3;
+		break;
+		case "limo":
+			return rmWeek4;
+		break;
+		case "christmas":
+			return rmWeek5;
+		break;
+		case "scary":
+			return rmWeek5_2;
+		break;
+		case "senpai":
+			return rmWeek6;
+		break;
+		case "evilschool":
+			return rmWeek6_2;
+		break;
+		case "alley":
+			return rmWhitty;
+		break;
+		case "alley-balls":
+			return rmWhittyMad;
+		break;
+		case "darkness":
+			return rmWeekDarkness;
+		break;
+		
+		default:
+			return rmWeek1;
+		break;
+	}
 }
 
 function fetchOpponentId(_string)
@@ -160,8 +289,8 @@ function fetchOpponentId(_string)
 		case "spirit": _id = 10; break;
 		case "spooky": _id = 2; break;
 		case "tankman": _id = 11; break;
-		case "whitty": _id = 100; break;
-		case "whittyC": _id = 101; break;
+		case "whit": _id = 100; break;
+		case "whitbonkers": _id = 101; break;
 		case "oxi": _id = 102; break;
 	}
 	
@@ -179,4 +308,259 @@ function fetchDifficultyName(_num)
 		case 2: _difficulty = "-hard"; break;
 	}
 	return string(_difficulty);
+}
+
+/**
+ * Returns a struct with character sprites
+ * @param {string} name name of the character
+ * @returns {struct} struct with sprites
+ */
+function character_get_sprites(name)
+{
+	var sprites = {
+		idle : sprBoyfriendIdle,
+		up : sprBoyfriendUp,
+		left : sprBoyfriendLeft,
+		down : sprBoyfriendDown,
+		right : sprBoyfriendRight,
+		upMiss : sprBoyfriendUpMiss,
+		leftMiss : sprBoyfriendLeftMiss,
+		downMiss : sprBoyfriendDownMiss,
+		rightMiss : sprBoyfriendRightMiss,
+		cheer : sprBoyfriendCheer,
+		die : sprBoyfriendDie
+	};
+	switch (name)
+	{
+		case "bf":
+			sprites.idle = sprBoyfriendIdle;
+			sprites.up = sprBoyfriendUp;
+			sprites.left = sprBoyfriendLeft;
+			sprites.down = sprBoyfriendDown;
+			sprites.right = sprBoyfriendRight;
+			sprites.upMiss = sprBoyfriendUpMiss;
+			sprites.leftMiss = sprBoyfriendLeftMiss;
+			sprites.downMiss = sprBoyfriendDownMiss;
+			sprites.rightMiss = sprBoyfriendRightMiss;
+			sprites.cheer = sprBoyfriendCheer;
+			sprites.die = sprBoyfriendDie;
+		break;
+		case "bf-car":
+			sprites.idle = sprBoyfriendCarIdle;
+			sprites.up = sprBoyfriendCarUp;
+			sprites.left = sprBoyfriendCarLeft;
+			sprites.down = sprBoyfriendCarDown;
+			sprites.right = sprBoyfriendCarRight;
+			sprites.upMiss = sprBoyfriendCarUpMiss;
+			sprites.leftMiss = sprBoyfriendCarLeftMiss;
+			sprites.downMiss = sprBoyfriendCarDownMiss;
+			sprites.rightMiss = sprBoyfriendCarRightMiss;
+		break;
+		case "bf-christmas":
+			sprites.idle = sprBoyfriendChristIdle;
+			sprites.up = sprBoyfriendChristUp;
+			sprites.left = sprBoyfriendChristLeft;
+			sprites.down = sprBoyfriendChristDown;
+			sprites.right = sprBoyfriendChristRight;
+			sprites.upMiss = sprBoyfriendChristUpMiss;
+			sprites.leftMiss = sprBoyfriendChristLeftMiss;
+			sprites.downMiss = sprBoyfriendChristDownMiss;
+			sprites.rightMiss = sprBoyfriendChristRightMiss;
+		break;
+		case "bf-pixel":
+			sprites.idle = sprBoyfriendPixelIdle;
+			sprites.up = sprBoyfriendPixelUp;
+			sprites.left = sprBoyfriendPixelLeft;
+			sprites.down = sprBoyfriendPixelDown;
+			sprites.right = sprBoyfriendPixelRight;
+			sprites.upMiss = sprBoyfriendPixelUpMiss;
+			sprites.leftMiss = sprBoyfriendPixelLeftMiss;
+			sprites.downMiss = sprBoyfriendPixelDownMiss;
+			sprites.rightMiss = sprBoyfriendPixelRightMiss;
+		break;
+		case "dad":
+			sprites.idle = sprDadIdle;
+			sprites.up = sprDadUp;
+			sprites.left = sprDadLeft;
+			sprites.down = sprDadDown;
+			sprites.right = sprDadRight;
+		break;
+		case "gf":
+			sprites.idle = sprGirlfriendIdle;
+			sprites.up = sprGirlfriendUp;
+			sprites.left = sprGirlfriendLeft;
+			sprites.down = sprGirlfriendDown;
+			sprites.right = sprGirlfriendRight;
+		break;
+		case "mom-car":
+			sprites.idle = sprMomIdle;
+			sprites.up = sprMomUp;
+			sprites.left = sprMomLeft;
+			sprites.down = sprMomDown;
+			sprites.right = sprMomRight;
+		break;
+		case "monster":
+			sprites.idle = sprMonsterIdle;
+			sprites.up = sprMonsterUp;
+			sprites.left = sprMonsterLeft;
+			sprites.down = sprMonsterDown;
+			sprites.right = sprMonsterRight;
+		break;
+		case "monster-christmas":
+			sprites.idle = sprMonsterChristIdle;
+			sprites.up = sprMonsterChristUp;
+			sprites.left = sprMonsterChristLeft;
+			sprites.down = sprMonsterChristDown;
+			sprites.right = sprMonsterChristRight;
+		break;
+		case "parents-christmas":
+			sprites.idle = sprCParentsDadIdle;
+			sprites.up = sprCParentsDadUp;
+			sprites.left = sprCParentsDadLeft;
+			sprites.down = sprCParentsDadDown;
+			sprites.right = sprCParentsDadRight;
+		break;
+		case "pico":
+			sprites.idle = sprPicoIdle;
+			sprites.up = sprPicoUp;
+			sprites.left = sprPicoLeft;
+			sprites.down = sprPicoDown;
+			sprites.right = sprPicoRight;
+		break;
+		case "senpai":
+			sprites.idle = sprSenpaiIdle;
+			sprites.up = sprSenpaiUp;
+			sprites.left = sprSenpaiLeft;
+			sprites.down = sprSenpaiDown;
+			sprites.right = sprSenpaiRight;
+		break;
+		case "senpai-angry":
+			sprites.idle = sprSenpaiMadIdle;
+			sprites.up = sprSenpaiMadUp;
+			sprites.left = sprSenpaiMadLeft;
+			sprites.down = sprSenpaiMadDown;
+			sprites.right = sprSenpaiMadRight;
+		break;
+		case "spirit":
+			sprites.idle = sprSpiritIdle;
+			sprites.up = sprSpiritUp;
+			sprites.left = sprSpiritLeft;
+			sprites.down = sprSpiritDown;
+			sprites.right = sprSpiritRight;
+		break;
+		case "spooky":
+			sprites.idle = sprSpookyIdle;
+			sprites.up = sprSpookyUp;
+			sprites.left = sprSpookyLeft;
+			sprites.down = sprSpookyDown;
+			sprites.right = sprSpookyRight;
+		break;
+		case "tankman":
+			sprites.idle = sprTankmanIdle;
+			sprites.up = sprTankmanUp;
+			sprites.left = sprTankmanLeft;
+			sprites.down = sprTankmanDown;
+			sprites.right = sprTankmanRight;
+		break;
+		case "whit":
+			sprites.idle = sprWhittyIdle;
+			sprites.up = sprWhittyUp;
+			sprites.left = sprWhittyLeft;
+			sprites.down = sprWhittyDown;
+			sprites.right = sprWhittyRight;
+		break;
+		case "whitbonkers":
+			sprites.idle = sprWhittyCIdle;
+			sprites.up = sprWhittyCUp;
+			sprites.left = sprWhittyCLeft;
+			sprites.down = sprWhittyCDown;
+			sprites.right = sprWhittyCRight;
+		break;
+		case "oxi":
+			sprites.idle = sprOxiIdle;
+			sprites.up = sprOxiUp;
+			sprites.left = sprOxiLeft;
+			sprites.down = sprOxiDown;
+			sprites.right = sprOxiRight;
+		break;
+		case "gold":
+			sprites.idle = sprGoldIdle;
+			sprites.up = sprGoldUp;
+			sprites.left = sprGoldLeft;
+			sprites.down = sprGoldDown;
+			sprites.right = sprGoldRight;
+		break;
+	}
+	return sprites;
+}
+
+/**
+ * Returns a sprite icon
+ * @param {string} name name of the character
+ * @returns {asset.GMSprite} Description
+ */
+function character_get_icon(name)
+{
+	var icon = sprDadIcon;
+	switch (name)
+	{
+		case "bf":
+			icon = sprBfIcon;
+		break;
+		case "bf-christmas":
+			icon = sprBfIcon;
+		break;
+		case "bf-pixel":
+			icon = sprBfIcon;
+		break;
+		case "dad":
+			icon = sprDadIcon;
+		break;
+		case "gf":
+			icon = sprGfIcon;
+		break;
+		case "mom-car":
+			icon = sprMomIcon;
+		break;
+		case "monster":
+			icon = sprMonsterIcon;
+		break;
+		case "monster-christmas":
+			icon = sprMonsterIcon;
+		break;
+		case "parents-christmas":
+			icon = sprParentsIcon;
+		break;
+		case "pico":
+			icon = sprPicoIcon;
+		break;
+		case "senpai":
+			icon = sprSenpaiIcon;
+		break;
+		case "senpai-angry":
+			icon = sprSenpaiMadIcon;
+		break;
+		case "spirit":
+			icon = sprSpiritIcon;
+		break;
+		case "spooky":
+			icon = sprSpookyIcon;
+		break;
+		case "tankman":
+			icon = sprTankmanIcon;
+		break;
+		case "whit":
+			icon = sprWhittyIcon;
+		break;
+		case "whitbonkers":
+			icon = sprWhittyMadIcon;
+		break;
+		case "oxi":
+			icon = sprOxiIcon;
+		break;
+		case "gold":
+			icon = sprGoldIcon;
+		break;
+	}
+	return icon;
 }

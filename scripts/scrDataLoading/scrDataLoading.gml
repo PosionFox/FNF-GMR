@@ -36,7 +36,7 @@ function load_data()
 	ini_close();
 }
 
-function loadSongData(_file)	// jsontoini overseeder, takes in a file and returns a struct
+function loadSongData(_file, loadChart = true)	// jsontoini overseeder, takes in a file and returns a struct
 {
 	show_debug_message("trying to load song:");
 	show_debug_message(_file);
@@ -60,10 +60,13 @@ function loadSongData(_file)	// jsontoini overseeder, takes in a file and return
 	
 	var player = songStruct.player1;
 	var opponent = songStruct.player2;
-	
+	var strStage = songStruct[$ "stage"];
 	var songName = songStruct.song;
-	var sections = songStruct.notes;
-	
+	var sections = [];
+	if (loadChart)
+	{
+		sections = songStruct.notes;
+	}
 	var bpm = songStruct.bpm;
 	var bps = bpm / 60;
 	var noteSpeed = songStruct.speed;	// bpm / 20;
@@ -73,34 +76,37 @@ function loadSongData(_file)	// jsontoini overseeder, takes in a file and return
 	
 	var lastSection = 1;
 	
-	for (var i = 0; i < array_length(sections); i++)	// loop sections content
+	if (loadChart)
 	{
-		var section_notes = sections[i][$ "sectionNotes"];
-		var length_in_steps = sections[i][$ "lengthInSteps"];
-		var type_of_section = sections[i][$ "typeOfSection"];
-		var must_hit_section = sections[i][$ "mustHitSection"];
-		
-		for (var j = 0; j < array_length(section_notes); j++)	// loop notes content
+		for (var i = 0; i < array_length(sections); i++)	// loop sections content
 		{
-			var note = section_notes[j];
-			var chartTime = note[0];
-			var noteType = note[1];
-			var _noteDuration = note[2];
-			if (is_string(_noteDuration)) { _noteDuration = 0; }	// ignore strings
-			var noteDuration = _noteDuration / 14.151;	//magic
-			//if (noteDuration > 1) { noteDuration--; }
+			var section_notes = sections[i][$ "sectionNotes"];
+			var length_in_steps = sections[i][$ "lengthInSteps"];
+			var type_of_section = sections[i][$ "typeOfSection"];
+			var must_hit_section = sections[i][$ "mustHitSection"];
+		
+			for (var j = 0; j < array_length(section_notes); j++)	// loop notes content
+			{
+				var note = section_notes[j];
+				var chartTime = note[0];
+				var noteType = note[1];
+				var _noteDuration = note[2];
+				if (is_string(_noteDuration)) { _noteDuration = 0; }	// ignore strings
+				var noteDuration = _noteDuration / 14.151;	//magic
+				//if (noteDuration > 1) { noteDuration--; }
 			
-			var calculatedPos = chartTime * pixelsToSeconds / 1000;
-			var noteY = calculatedPos / posCoefficient;
+				var calculatedPos = chartTime * pixelsToSeconds / 1000;
+				var noteY = calculatedPos / posCoefficient;
 			
-			if (must_hit_section) { noteType = (noteType + 4) % 8; }
+				if (must_hit_section) { noteType = (noteType + 4) % 8; }
 			
-			if (noteY >= ds_grid_height(notes_output)) { ds_grid_resize(notes_output, 8, noteY + 1); }
+				if (noteY >= ds_grid_height(notes_output)) { ds_grid_resize(notes_output, 8, noteY + 1); }
 			
-			// create cam notes
-			if (lastSection != must_hit_section) { place_camera(notes_output, noteType, noteY); }
-			lastSection = must_hit_section;
-			ds_grid_set(notes_output, noteType, noteY, 1 + noteDuration);
+				// create cam notes
+				if (lastSection != must_hit_section) { place_camera(notes_output, noteType, noteY); }
+				lastSection = must_hit_section;
+				ds_grid_set(notes_output, noteType, noteY, 1 + noteDuration);
+			}
 		}
 	}
 	
@@ -125,6 +131,7 @@ function loadSongData(_file)	// jsontoini overseeder, takes in a file and return
 	var _songData = {	// build the song data struct
 		player1 : player,
 		player2 : opponent,
+		stage : strStage,
 		song : songName,
 		name : trueSongName,
 		instFile : trueSongName + "_Inst",

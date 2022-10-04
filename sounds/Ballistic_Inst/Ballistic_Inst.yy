@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "ballistic_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Ballistic_Inst.ogg",
-  "duration": 153.410141,
+  "soundFile": "ballistic_Inst.ogg",
+  "duration": 153.40515,
   "parent": {
     "name": "Ballistic",
     "path": "folders/Sounds/Music/Special/Ballistic.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Ballistic_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

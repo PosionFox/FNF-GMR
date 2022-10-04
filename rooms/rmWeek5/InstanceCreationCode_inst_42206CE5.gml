@@ -1,0 +1,1 @@
+global.camZoom = 0.80;

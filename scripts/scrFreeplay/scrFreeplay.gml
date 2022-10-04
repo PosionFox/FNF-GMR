@@ -32,24 +32,27 @@ function freeplay_songs()
 	song[21] = "stress";
 }
 
+function freeplay_get_songs()
+{
+	var data;
+	var buff = buffer_load("data/freeplayList.json");
+	var str = buffer_read(buff, buffer_string);
+	buffer_delete(buff);
+	data = json_parse(str);
+	
+	var s;
+	var sorted;
+	var len = array_length(data) - 1;
+	for (var i = len; i >= 0; i--)
+	{
+		s = abs(i - len);
+		sorted[s] = data[i];
+	}
+	return sorted;
+}
+
 function load_freeplay()
 {
-	var _data;
-	var _buff = buffer_load("data/freeplayList.json");
-	var _string = buffer_read(_buff, buffer_string);
-	buffer_delete(_buff);
-	_data = json_parse(_string);
-	
-	var _s;
-	var _sorted;
-	var _len = array_length(_data) - 1;
-	for (var i = _len; i >= 0; i--)
-	{
-		_s = abs(i - _len);
-		_sorted[_s] = _data[i]; 
-	}
-	return _sorted;
-	
 	//if !(special) freeplay_songs();
 	//else freeplay_songs_special();
 	

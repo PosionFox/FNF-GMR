@@ -16,16 +16,16 @@ function freeplay_ui(){
 		draw_text_transformed(1110, 90, round(scorDisplay), 0.3, 0.3, 0);
 
 		// dif
-		draw_sprite(sDifs, difSelected, 1110, 46);
-		if (difSelected != 2) draw_sprite(sDifsLock, 0, 1110, 46);  // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
+		draw_sprite(sprDifs, difSelected, 1110, 46);
+		if (difSelected != 2) draw_sprite(sprDifsLock, 0, 1110, 46);  // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
 
 		draw_set_halign(fa_left);
 		
 		// enemy icons
 		enem = curEnemy;
 		bf = 0;
-		enemyIconSpr = sIcons;
-		bfIconSpr = sIcons;
+		enemyIconSpr = sprIcons;
+		bfIconSpr = sprIcons;
 
 		special_icons(curEnemy);
 		
@@ -45,7 +45,7 @@ function freeplay_ui(){
 		draw_set_halign(fa_left);
 
 		// dif
-		draw_sprite(sDifsAlt, difSelected, 1074, 50);
+		draw_sprite(sprDifsAlt, difSelected, 1074, 50);
 		//if (difSelected != 2) draw_sprite(sDifsLock, 0, 1074, 50);  // TEMP BECAUSE I HAVE YET TO FINISH THE OTHER DIFS
 	}
 }

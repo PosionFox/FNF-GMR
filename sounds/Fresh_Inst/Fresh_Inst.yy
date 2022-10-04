@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Fresh_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Fresh_Inst.ogg",
-  "duration": 82.05561,
+  "duration": 82.05061,
   "parent": {
     "name": "Fresh",
     "path": "folders/Sounds/Music/Week 1/Fresh.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Fresh_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

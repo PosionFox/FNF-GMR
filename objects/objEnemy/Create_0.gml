@@ -1,0 +1,81 @@
+
+image_speed = 1;
+dir = Notes.left;
+animationTimer = 0;
+animationIndex = 0;
+holdAnimation = false;
+singFrameMulti = 1;
+ready = true;
+bpmTimer = 0;
+
+sprEnemy[0] = "sprGirlfriend";
+sprEnemy[1] = "sprDad";
+sprEnemy[2] = "sprSpooky";
+sprEnemy[3] = "sprMonster";
+sprEnemy[4] = "sprPico";
+sprEnemy[5] = "sprMom";
+sprEnemy[6] = "sprCParentsDad";
+sprEnemy[7] = "sprMonsterChrist";
+sprEnemy[8] = "sprSenpai";
+sprEnemy[9] = "sprSenpaiMad";
+sprEnemy[10] = "sprSpirit";
+sprEnemy[11] = "sprTankman";
+sprEnemy[100] = "sprWhitty";
+sprEnemy[101] = "sprWhittyC";
+sprEnemy[102] = "sprOxi";
+sprEnemy[103] = "sprBoyfriendPixel";
+
+if (global.enemy = 0) instance_destroy();
+
+var sprChosen = sprEnemy[global.enemy];
+//sprIdle = asset_get_index(sprChosen + "Idle");
+//sprLeft = asset_get_index(sprChosen + "Left");
+//sprDown = asset_get_index(sprChosen + "Down");
+//sprUp = asset_get_index(sprChosen + "Up");
+//sprRight = asset_get_index(sprChosen + "Right");
+
+sprites = character_get_sprites(global.songData[$ "player2"] ?? "dad");
+
+spritesAlt = {
+	idle : sprCParentsMomIdle,
+	up : sprCParentsMomUp,
+	left : sprCParentsMomLeft,
+	down : sprCParentsMomDown,
+	right : sprCParentsMomRight
+}
+
+sprite_index = sprites.idle;
+
+//if (global.enemy = 6)
+//{
+//	sprLeftAlt =	sprCParentsMomLeft;
+//	sprDownAlt =	sprCParentsMomDown;
+//	sprUpAlt =	sprCParentsMomUp;
+//	sprRightAlt =	sprCParentsMomRight;
+//}
+
+scale = image_yscale;
+if (global.enemy = 8) or (global.enemy = 9) or (global.enemy = 10) or (global.enemy = 103) scale = 6;
+
+flipped = false;
+if (global.enemy = 4) or (global.enemy = 103) flipped = true;
+if (flipped) {
+	var oldLeft = sprites.left; var oldRight = sprites.right;
+	sprites.left = oldRight; sprites.right = oldLeft;
+}
+
+altUsed = false;
+
+spriteUsed = sprites.left;
+shadowSprite[0] = sprite_index;
+shadowSprite[1] = sprite_index;
+shadowSprite[2] = sprite_index;
+if (global.songData[$ "player2"] == "gold")
+{
+	ready = false;
+	sprite_index = sprGoldHello;
+	image_speed = 0;
+	alarm[0] = 60 * 5;
+}
+
+beforeAA = gpu_get_texfilter();
