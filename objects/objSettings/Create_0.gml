@@ -73,3 +73,4 @@ categories.addSettings([
 
 currentMenu = categories;
 menuIndex = 0;
+offsetY = 0;

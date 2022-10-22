@@ -1,12 +1,16 @@
 // draw the notes in the editor depending on their place in the ds_grid
 // !!! EXTREMELY UNOPTIMIZED, PRIORITY IN OPTIMIZATION
-function draw_editor_notes(noteGrid, _x, _y) {
+function draw_editor_notes(noteGrid, _x, _y)
+{
 	var gridW = ds_grid_width(noteGrid);
 	var gridH = ds_grid_height(noteGrid);
 	
-	for (var gY = 0; gY < gridH; gY++) {
-		for (var gX = 0; gX < gridW; gX++) {
-			if (ds_grid_get(noteGrid, gX, gY) != 0) {
+	for (var gY = 0; gY < gridH; gY++)
+	{
+		for (var gX = 0; gX < gridW; gX++)
+		{
+			if (ds_grid_get(noteGrid, gX, gY) != 0)
+			{
 				var val = ds_grid_get(noteGrid, gX, gY);
 				
 				var sprToDraw = sprNotes;

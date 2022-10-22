@@ -86,3 +86,5 @@ if (input.back)
 	}
 	audio_play_sound(sndCancelMenu, 10, false);
 }
+
+offsetY = lerp(offsetY, menuIndex, 0.1);

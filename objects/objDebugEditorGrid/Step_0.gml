@@ -1,3 +1,4 @@
+
 var mouseX = mouse_x - 20;
 var mouseY = mouse_y - 2;
 selBoxX = (round(mouseX/gridSize) * gridSize);
@@ -10,31 +11,21 @@ var selectedList = global.chart;
 var notePosX = -(x - selBoxX) / gridSize;
 var notePosY = -(y - selBoxY) / gridSize;
 
-function function_key_up() {
-	if (mouse_wheel_up())
-	|| (keyboard_check(vk_up))
-		return true;
-	else
-		return false;
-}
+//section = ((objEditorCamera.y - y) div ((cellHeight) * sectionSize));
 
-function function_key_down() {
-	if (mouse_wheel_down())
-	|| (keyboard_check(vk_down))
-		return true;
-	else
-		return false;
-}
-
-
-if (fnfBotMode) {
-	if (keyboard_check_pressed(vk_anykey)) {
-		if !(fnfBotEnemy) {
+if (fnfBotMode)
+{
+	if (keyboard_check_pressed(vk_anykey))
+	{
+		if !(fnfBotEnemy)
+		{
 			notePosX = 4;
 			if (keyboard_check(vk_down)) notePosX = 5;
 			if (keyboard_check(vk_up)) notePosX = 6;
 			if (keyboard_check(vk_right)) notePosX = 7;
-		} else {
+		}
+		else
+		{
 			notePosX = 0;
 			if (keyboard_check(vk_down)) notePosX = 1;
 			if (keyboard_check(vk_up)) notePosX = 2;
@@ -81,24 +72,30 @@ if (mouse_check_button_pressed(mb_middle))
 }
 
 // change length
-if (keyboard_check(vk_shift)) {
-	if (function_key_down()) {
+if (keyboard_check(vk_shift))
+{
+	if (inputKeyDown())
+	{
 		var curVal = ds_grid_get(selectedList, notePosX, notePosY);
 		ds_grid_set(selectedList, notePosX, notePosY, curVal + 1);
 	}
-	if (function_key_up()) {
+	if (inputKeyUp())
+	{
 		var curVal = ds_grid_get(selectedList, notePosX, notePosY);
 		if (curVal > 1) ds_grid_set(selectedList, notePosX, notePosY, curVal - 1);
 	}
 }
 
 // change offset
-if (keyboard_check(vk_tab)) {
-	if (function_key_down()) {
+if (keyboard_check(vk_tab))
+{
+	if (inputKeyDown())
+	{
 		var curVal = ds_grid_get(selectedList, notePosX, notePosY);
 		ds_grid_set(selectedList, notePosX, notePosY, curVal + 0.01);
 	}
-	if (function_key_up()) {
+	if (inputKeyUp())
+	{
 		var curVal = ds_grid_get(selectedList, notePosX, notePosY);
 		ds_grid_set(selectedList, notePosX, notePosY, curVal - 0.01);
 	}

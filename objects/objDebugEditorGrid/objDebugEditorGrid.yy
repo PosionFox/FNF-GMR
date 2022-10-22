@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objDebugNoteEditor",
+  "name": "objDebugEditorGrid",
   "spriteId": {
     "name": "sprDebugEditorGrid",
     "path": "sprites/sprDebugEditorGrid/sprDebugEditorGrid.yy",

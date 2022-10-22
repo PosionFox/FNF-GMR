@@ -1,3 +1,6 @@
+
+notesFinished = false;
+
 // if the chart exists, load the chart
 // change the notespeed depending on mods
 if (variable_global_exists("chart")) {
@@ -11,4 +14,5 @@ if (variable_global_exists("chart")) {
 	if (global.slownotes) global.noteSpeed -= 3;
 	
 	create_notes(global.chart);
+	//create_notes_v2();
 }

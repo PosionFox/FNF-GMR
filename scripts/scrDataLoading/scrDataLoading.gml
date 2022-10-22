@@ -68,10 +68,17 @@ function loadSongData(_file, loadChart = true)	// jsontoini overseeder, takes in
 		sections = songStruct.notes;
 	}
 	var bpm = songStruct.bpm;
-	var bps = bpm / 60;
-	var noteSpeed = songStruct.speed;	// bpm / 20;
-	var camSpeed = bpm * 2.6;
-	var posCoefficient = noteSpeed * (100 / (camSpeed / 48));
+	
+	var crochet = 60 / bpm;
+	var stepCrochet = crochet / 4;
+	//var curSection = floor(audio_sound_get_track_position(global.music) / (16 * stepCrochet));
+	
+	var noteSpeed = songStruct.speed * 4;
+	//var noteSpeed = bpm / 20;
+	//var camSpeed = bpm * 2.6;
+	var scrollSpeed = bpm * noteSpeed;
+	var posCoefficient = (noteSpeed) * (100 / (scrollSpeed / 48));
+	//var posCoefficient = noteSpeed * 10;
 	var pixelsToSeconds = noteSpeed * 120;
 	
 	var lastSection = 1;
@@ -80,32 +87,37 @@ function loadSongData(_file, loadChart = true)	// jsontoini overseeder, takes in
 	{
 		for (var i = 0; i < array_length(sections); i++)	// loop sections content
 		{
-			var section_notes = sections[i][$ "sectionNotes"];
-			var length_in_steps = sections[i][$ "lengthInSteps"];
-			var type_of_section = sections[i][$ "typeOfSection"];
-			var must_hit_section = sections[i][$ "mustHitSection"];
+			var sectionNotes = sections[i][$ "sectionNotes"];
+			var lengthInSteps = sections[i][$ "lengthInSteps"];
+			var typeOfSection = sections[i][$ "typeOfSection"];
+			var mustHitSection = sections[i][$ "mustHitSection"];
 		
-			for (var j = 0; j < array_length(section_notes); j++)	// loop notes content
+			for (var j = 0; j < array_length(sectionNotes); j++)	// loop notes content
 			{
-				var note = section_notes[j];
-				var chartTime = note[0];
+				var note = sectionNotes[j];
+				var strumTime = note[0];	// time in milliseconds
 				var noteType = note[1];
-				var _noteDuration = note[2];
-				if (is_string(_noteDuration)) { _noteDuration = 0; }	// ignore strings
-				var noteDuration = _noteDuration / 14.151;	//magic
-				//if (noteDuration > 1) { noteDuration--; }
+				var susLength = note[2];	// sustain length in milliseconds
+				if (is_string(susLength)) { susLength = 1; }	// ignore strings
+				//var noteDuration = _noteDuration / 14.151;	//magic
+				if (susLength > 1) { susLength--; }
+				var susLengthPixels = (susLength) * (noteSpeed);	//	convert to pixels
+				
 			
-				var calculatedPos = chartTime * pixelsToSeconds / 1000;
+				var calculatedPos = strumTime * (pixelsToSeconds / 1000);
+				//var calculatedPos = strumTime / 8.825;
 				var noteY = calculatedPos / posCoefficient;
+				
+				//var noteY = ((strumTime / 1000) / stepCrochet) - (curSection * 16);
 			
-				if (must_hit_section) { noteType = (noteType + 4) % 8; }
+				if (mustHitSection) { noteType = (noteType + 4) % 8; }
 			
 				if (noteY >= ds_grid_height(notes_output)) { ds_grid_resize(notes_output, 8, noteY + 1); }
 			
 				// create cam notes
-				if (lastSection != must_hit_section) { place_camera(notes_output, noteType, noteY); }
-				lastSection = must_hit_section;
-				ds_grid_set(notes_output, noteType, noteY, 1 + noteDuration);
+				if (lastSection != mustHitSection) { place_camera(notes_output, noteType, noteY); }
+				lastSection = mustHitSection;
+				ds_grid_set(notes_output, noteType, noteY, 1 + susLengthPixels);
 			}
 		}
 	}
@@ -116,7 +128,7 @@ function loadSongData(_file, loadChart = true)	// jsontoini overseeder, takes in
 	//trueSongName = string_replace_all(trueSongName, "-", "_");
 	//trueSongName = string_upper_first(string_lower(trueSongName));
 	var trueSongName = string_replace_all(songName, "-", "_");
-	var trueSongName = string_replace_all(trueSongName, " ", "_");
+	trueSongName = string_replace_all(trueSongName, " ", "_");
 	
 	var trueDif = string_copy(_file, string_last_pos("-", _file) + 1, string_length(_file));
 	var _difficulty;
@@ -138,7 +150,7 @@ function loadSongData(_file, loadChart = true)	// jsontoini overseeder, takes in
 		voiceFile : trueSongName + "_Voices",
 		difficulty : _difficulty,
 		noteOutput : ds_grid_write(notes_output),
-		camSpeed : camSpeed,
+		camSpeed : scrollSpeed,
 		bpm : bpm,
 		speed : noteSpeed,
 		enemy : 1,

@@ -1,4 +1,5 @@
 /// @description 
+if (global.chaCurrent != "") { exit; }
 
 if (room != rmTitle) && (room != rmDebug) {
 	if (room != rmCharacterSelect) {

@@ -139,7 +139,8 @@ function loadSongChart(_name)
 	global.voices = asset_get_index(string(_parsedName) + "_Voices");
 	//if (global.voices != "") { global.voices = asset_get_index(global.voices); }
 	
-	global.noteSpeed = songStruct.speed * 4;
+	//global.noteSpeed = songStruct.speed * 4;
+	global.noteSpeed = songStruct.speed;
 	global.bpm = songStruct.bpm;
 	global.camSpeed = songStruct.camSpeed;
 	global.enemy = fetchOpponentId(songStruct.player2);
