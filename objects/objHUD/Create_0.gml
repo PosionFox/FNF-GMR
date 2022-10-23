@@ -1,5 +1,6 @@
 global.hp = 50;
 global.hpMinimum = 0;
+displayHpMin = global.hpMinimum;
 hpMax = 100;
 hiddenScore = global.curScore;
 lastFrameWindow = 0;

@@ -2,6 +2,7 @@
 depth = -10000
 
 ready = false;
+audio_stop_all();
 
 spritesToLoad = [];
 

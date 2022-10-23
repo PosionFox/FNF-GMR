@@ -31,14 +31,16 @@ if !(global.auto)
 	// subtract the time the animation is playing for
 	if (animCount > 0) animCount -= 1 * global.deltaMultiplier;
 
-	if !(global.dead) {
+	if !(global.dead)
+	{
 		noteCheck(vk_left, global.leftKeybind, gp_padl, Notes.left);
 		noteCheck(vk_down, global.downKeybind, gp_padd, Notes.down);
 		noteCheck(vk_up, global.upKeybind, gp_padu, Notes.up);
 		noteCheck(vk_right, global.rightKeybind, gp_padr, Notes.right);
 	}
 
-	if !(holdAnimation) {
+	if !(holdAnimation)
+	{
 		var endAnim = sprite_get_number(sprites.left) - 1;
 		if (missed) endAnim = 1;
 		if (singFrame < endAnim) singFrame += (0.08 * singFrameMulti) * global.deltaMultiplier;

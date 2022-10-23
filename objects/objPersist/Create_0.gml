@@ -23,7 +23,7 @@ global.comboNumberFontPixel = font_add_sprite_ext(sprComboNumberPixel, comboNumS
 // gui
 volumeDisplay = 0;
 timeUntilMoveOn = 0;
-timeUntilMoveOnMax = 210;
+timeUntilMoveOnMax = 3;
 
 
 load_data();

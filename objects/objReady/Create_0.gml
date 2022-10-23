@@ -1,4 +1,5 @@
 
+instance_deactivate_object(self);
 //image_speed = (global.bpm / 60) / 30 * global.deltaMultiplier;
 start = true;
 
@@ -30,21 +31,6 @@ audio_stop_all();
 
 if (global.songData[$ "player2"] == "gold")
 {
-	//snd3 = undefined;
-	//snd2 = undefined;
-	//snd1 = undefined;
-	//sndGo = undefined;
-	var intros = [
-		sndImDead1,
-		sndImDead2,
-		sndImDead3,
-		sndImDead4,
-		sndImDead5,
-		sndImDead6,
-		sndImDead7,
-	]
-	var i = irandom(array_length(intros) - 1);
-	audio_play_sound(intros[i], 10, false);
 	visible = false;
 }
 global.songIsPlaying = false;

@@ -11,7 +11,7 @@ function draw_editor_notes(noteGrid, _x, _y)
 		{
 			if (ds_grid_get(noteGrid, gX, gY) != 0)
 			{
-				var val = ds_grid_get(noteGrid, gX, gY);
+				var val = (ds_grid_get(noteGrid, gX, gY) - 1) / 10;
 				
 				var sprToDraw = sprNotes;
 				if (val <= -1) sprToDraw = sprDebugNotes; // if the note is negative (which means its used for camera, etc.) change the sprite

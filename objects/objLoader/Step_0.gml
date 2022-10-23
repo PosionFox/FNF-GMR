@@ -2,6 +2,7 @@
 if (ready)
 {
 	instance_activate_all();
+	if (instance_exists(objEnemy)) { objEnemy.onLoad(); }
 	instance_destroy();
 }
 

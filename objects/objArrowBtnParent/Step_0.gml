@@ -128,10 +128,6 @@ if !(enemy) && !(global.auto)
 			global.curScore -= 10 * global.currentMultiplier;
 			global.combo = 0;
 			objHUD.missCount += 1;
-			if (global.songData[$ "player2"] == "gold")
-			{
-				global.hpMinimum++;
-			}
 			
 			if (global.fragile) global.hp = 0;
 		}

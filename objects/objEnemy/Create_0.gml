@@ -1,11 +1,12 @@
 
+ready = true;
+
 image_speed = 1;
 dir = Notes.left;
 animationTimer = 0;
 animationIndex = 0;
 holdAnimation = false;
 singFrameMulti = 1;
-ready = true;
 bpmTimer = 0;
 
 sprEnemy[0] = "sprGirlfriend";
@@ -59,7 +60,8 @@ if (global.enemy = 8) or (global.enemy = 9) or (global.enemy = 10) or (global.en
 
 flipped = false;
 if (global.enemy = 4) or (global.enemy = 103) flipped = true;
-if (flipped) {
+if (flipped)
+{
 	var oldLeft = sprites.left; var oldRight = sprites.right;
 	sprites.left = oldRight; sprites.right = oldLeft;
 }
@@ -70,12 +72,14 @@ spriteUsed = sprites.left;
 shadowSprite[0] = sprite_index;
 shadowSprite[1] = sprite_index;
 shadowSprite[2] = sprite_index;
-if (global.songData[$ "player2"] == "gold")
-{
-	ready = false;
-	sprite_index = sprGoldHello;
-	image_speed = 0;
-	alarm[0] = 60 * 5;
-}
 
 beforeAA = gpu_get_texfilter();
+
+
+onLoad = function() {}
+
+start = function() {}
+
+onPause = function() {}
+
+onUnpause = function() {}

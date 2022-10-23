@@ -1,3 +1,5 @@
+
+instance_deactivate_object(self);
 // choose the sprites to use
 char = "sprBoyfriend";
 flipped = false;

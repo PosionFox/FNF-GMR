@@ -38,7 +38,7 @@ if (variable_global_exists("musicSync") and global.songIsPlaying)
 	
 	if (!f_playing(_audio))
 	{
-		timeUntilMoveOn++;
+		timeUntilMoveOn += DT;
 	}
 	
 	//if (finalTime <= 0) // fix song skip early

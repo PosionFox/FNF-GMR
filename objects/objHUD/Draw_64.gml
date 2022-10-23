@@ -15,7 +15,7 @@ if !(global.flashlight) {
 	draw_rectangle_color(x + outlineWidth, y - outlineWidth, x - healthXOff - outlineWidth, y + healthYOff + outlineWidth, c_black, c_black, c_black, c_black, false);
 	draw_rectangle_color(x, y, x - healthXOff, y + healthYOff, c_red, c_red, c_red, c_red, false);
 	draw_rectangle_color(x, y, x - hpWidth, y + 10, c_lime, c_lime, c_lime, c_lime, false);
-	draw_rectangle_color(x, y, x - (global.hpMinimum / hpMax) * healthXOff, y + 10, c_ltgray, c_ltgray, c_ltgray, c_ltgray, false);
+	draw_rectangle_color(x, y, x - (displayHpMin / hpMax) * healthXOff, y + 10, c_ltgray, c_ltgray, c_ltgray, c_ltgray, false);
 
 	var boyHpLow = (global.hp <= 10) or (global.fragile);
 	var enemyHpLow = (global.hp >= 90);

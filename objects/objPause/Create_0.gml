@@ -22,13 +22,19 @@ gfFakeScale = objGirlfriend.image_xscale;
 
 // pick the fake location of the enemy
 enSprite = undefined;
-if (instance_exists(objEnemy)) {
+if (instance_exists(objEnemy))
+{
+	objEnemy.onPause();
 	enSprite = objEnemy.sprite_index;
 	enFakeX = objEnemy.x;
 	enFakeY = objEnemy.y;
 	enFakeIndex = objEnemy.image_index;
 	enFakeScaleX = objEnemy.image_xscale;
 	enFakeScaleY = objEnemy.image_yscale;
+}
+if (instance_exists(objBoyfriend))
+{
+	
 }
 
 // create lists for the offsets of each item in the menu list

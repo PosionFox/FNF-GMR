@@ -2,8 +2,8 @@
 
 if (keyboard_check(vk_shift)) // legacy charts
 {
-	var songName = get_string("(Loading) Song Name:", global.songName);
-	dif = get_integer("Difficulty (0 - easy, 1 - normal, 2 - hard):", dif);
+	var songName = get_string("(Loading) Song Name:", "");
+	dif = get_integer("Difficulty (0 - easy, 1 - normal, 2 - hard):", "");
 
 	if (songName != "") { global.songName = songName; } else { exit; }
 
@@ -12,8 +12,8 @@ if (keyboard_check(vk_shift)) // legacy charts
 }
 else
 {
-	var songName = get_string("(Loading) Song Name:", global.songName);
-	dif = get_integer("Difficulty (0 - easy, 1 - normal, 2 - hard):", dif);
+	var songName = get_string("(Loading) Song Name:", "");
+	dif = get_integer("Difficulty (0 - easy, 1 - normal, 2 - hard):", "");
 
 	if (songName != "") { global.songName = songName; } else { exit; }
 

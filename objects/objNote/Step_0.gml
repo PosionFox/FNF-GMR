@@ -131,10 +131,6 @@ if (y < 0 - sliderLength - 10)
 	global.combo = 0;
 	
 	objHUD.missCount += 1;
-	if (global.songData[$ "player2"] == "gold")
-	{
-		global.hpMinimum++;
-	}
 }
 if (switchTurn) or (bfHey)
 {

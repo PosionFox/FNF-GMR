@@ -1,11 +1,8 @@
+
 if (global.enemy = 0) instance_destroy();
 if (global.enemy = 5) or (global.enemy = 6) singFrameMulti = 2;
 if (global.enemy = 10) singFrameMulti = 2;
-if (global.songData[$ "player2"] == "gold")
-{
-	singFrameMulti = 2.5;
-	global.hpMinimum += 0.0045 * global.deltaMultiplier;
-}
+
 
 if (ready)
 {
@@ -16,7 +13,7 @@ if (animationTimer > 0)
 {
 	animationTimer -= global.deltaMultiplier;
 	
-	if (sprite_get_number(spriteUsed) < 3)
+	if (sprite_get_number(spriteUsed) <= 2)
 	{
 		if (animationIndex < sprite_get_number(spriteUsed) - 1) or holdAnimation
 		{

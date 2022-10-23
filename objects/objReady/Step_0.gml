@@ -47,5 +47,6 @@ if (image_index >= 4)
 	}
 	objBoyfriend.bpmTimer = 0;
 	objGirlfriend.image_index = 0;
+	objEnemy.start();
 	instance_destroy();
 }
