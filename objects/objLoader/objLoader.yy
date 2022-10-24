@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "objLoader",
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprMods",
+    "path": "sprites/sprMods/sprMods.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

@@ -45,8 +45,8 @@ if (image_index >= 4)
 		noteSpeedAdd = (0.01*noteRangeDetermine)*global.accelnotes;
 		curNoteSpeed = global.noteSpeed + noteSpeedAdd;
 	}
-	objBoyfriend.bpmTimer = 0;
-	objGirlfriend.image_index = 0;
-	objEnemy.start();
+	if (instance_exists(objBoyfriend)) objBoyfriend.bpmTimer = 0;
+	if (instance_exists(objGirlfriend)) objGirlfriend.image_index = 0;
+	if (instance_exists(objEnemy)) objEnemy.start();
 	instance_destroy();
 }

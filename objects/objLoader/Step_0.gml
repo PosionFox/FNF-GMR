@@ -6,7 +6,9 @@ if (ready)
 	instance_destroy();
 }
 
-if (!ready and os_type != os_operagx)
+sprite_index = currentSprite;
+
+if (!ready and quickLoad)
 {
 	var _results = 0;
 	for (var i = 0; i < array_length(spritesToLoad); i++)

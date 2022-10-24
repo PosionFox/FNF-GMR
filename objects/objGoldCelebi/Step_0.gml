@@ -1,7 +1,9 @@
 
+
 switch (state)
 {
 	case "hello":
+		image_speed = 1 * global.deltaMultiplier;
 		if (image_index >= image_number - 1)
 		{
 			state = "idle";
@@ -28,7 +30,7 @@ switch (state)
 		}
 	break;
 	case "bye":
-		image_speed = -1;
+		image_speed = -1 * global.deltaMultiplier;
 		if (round(image_index) <= 0)
 		{
 			instance_destroy();

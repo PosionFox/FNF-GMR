@@ -1,4 +1,5 @@
 /// @description 
+/*
 if (global.chaCurrent != "") { exit; }
 
 if (room != rmTitle) && (room != rmDebug) {
@@ -12,3 +13,4 @@ if (room != rmTitle) && (room != rmDebug) {
 		o.roomTo = global.roomBefore;
 	}
 }
+*/

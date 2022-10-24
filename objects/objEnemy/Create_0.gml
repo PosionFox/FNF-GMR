@@ -8,6 +8,7 @@ animationIndex = 0;
 holdAnimation = false;
 singFrameMulti = 1;
 bpmTimer = 0;
+threeFrame = false;
 
 sprEnemy[0] = "sprGirlfriend";
 sprEnemy[1] = "sprDad";

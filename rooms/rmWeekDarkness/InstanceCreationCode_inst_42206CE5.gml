@@ -1,1 +1,1 @@
-global.camZoom = 1.2;
+global.camZoom = 1.14;

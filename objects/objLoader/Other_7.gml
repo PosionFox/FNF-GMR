@@ -1,14 +1,13 @@
 
-if (os_type == os_operagx)
+if (!ready and !quickLoad)
 {
-	if (progress >= array_length(spritesToLoad) - 1)
+	if (progress >= progressMax)
 	{
 		ready = true;
 	}
 	else
 	{
 		progress++;
-		sprite_index = spritesToLoad[progress];
+		currentSprite = spritesToLoad[progress];
 	}
 }
-

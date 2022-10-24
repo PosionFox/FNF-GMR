@@ -5,7 +5,7 @@ global.roomBefore = room;
 
 global.hudSurface = surface_create(1280, 720)
 hudBopVsp = 0;
-hudBopScale = 0;
+hudBopScale = 1;
 hudBopTimer = 0;
 
 oldCamX = 1164;
@@ -33,7 +33,17 @@ load_data();
 //i did it dw - codist 2021-05-08
 
 // delta time
-targetDelta = 1/120;
+targetDelta = 1 / 120;
 actualDelta = DT;
-global.deltaMultiplier = actualDelta/targetDelta;
+global.deltaMultiplier = actualDelta / targetDelta;
+
+
+calculateDelta = function()
+{
+	targetDelta = 1 / 120;
+	actualDelta = DT;
+	global.deltaMultiplier = actualDelta / targetDelta;
+}
+
+calculateDelta();
 

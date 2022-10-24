@@ -1,21 +1,21 @@
 // used bopping code, readded
 //if (global.enemy = 5) {
 hudBopVsp += 0.1;
-if (hudBopScale > 0) hudBopScale -= hudBopVsp;
-if (hudBopScale < 0) hudBopScale = 0;
+//if (hudBopScale > 0) hudBopScale -= hudBopVsp;
+//if (hudBopScale < 0) hudBopScale = 0;
 
 if (hudBopTimer >= 120)
 {
 	hudBopVsp = 0;
-	hudBopScale = 10;
+	//hudBopScale = 1.02;
 	hudBopTimer = 0;
 }
 hudBopTimer += (global.bpm / 60) * global.deltaMultiplier;
+hudBopScale = lerp(hudBopScale, 1, 0.1);
 //}
 
 // calculate deltatime
-actualDelta = DT;
-global.deltaMultiplier = actualDelta/targetDelta;
+calculateDelta();
 
 // check if song ended
 if (variable_global_exists("musicSync") and global.songIsPlaying)

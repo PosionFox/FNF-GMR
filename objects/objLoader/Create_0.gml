@@ -1,9 +1,9 @@
 
-depth = -10000
-
-ready = false;
+depth = -10000;
 audio_stop_all();
 
+ready = false;
+quickLoad = true;
 spritesToLoad = [];
 
 var sprites = {};
@@ -29,16 +29,17 @@ if (instance_exists(objEnemy) and global.songData[$ "player2"] != undefined)
 progress = 0;
 progressMax = array_length(spritesToLoad) - 1;
 progressDisplay = 0;
+currentSprite = spritesToLoad[progress];
 
-if (os_type == os_operagx)
+if (os_type == os_operagx) { quickLoad = false; }
+
+if (!quickLoad)
 {
 	if (array_equals(global.previousLoadedSprites, spritesToLoad))
 	{
-		instance_destroy();
-		exit;
+		ready = true;
 	}
 	
-	sprite_index = spritesToLoad[progress];
 	image_index = 0;
 	image_speed = 1;
 	
@@ -47,4 +48,3 @@ if (os_type == os_operagx)
 }
 
 instance_deactivate_all(true);
-
