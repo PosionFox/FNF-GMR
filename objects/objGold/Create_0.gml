@@ -35,12 +35,12 @@ start = function()
 	{
 		if (instance_exists(objHUD))
 		{
-			objHUD.hudAlphaTarget = 1;
+			objHUD.hudAlphaTarget = 0.9;
 			objHUD.hudAlphaSpd = 0.008;
 		}
 		if (instance_exists(objPersist))
 		{
-			objPersist.hudAlphaTarget = 1;
+			objPersist.hudAlphaTarget = 0.9;
 			objPersist.hudAlphaSpd = 0.008;
 		}
 	});
