@@ -5,8 +5,12 @@ global.roomBefore = room;
 
 global.hudSurface = surface_create(1280, 720)
 hudBopVsp = 0;
-hudBopScale = 1;
+hudBopScale = 0;
 hudBopTimer = 0;
+
+hudAlpha = 0;
+hudAlphaTarget = 1;
+hudAlphaSpd = 0.01;
 
 oldCamX = 1164;
 oldCamY = 692;

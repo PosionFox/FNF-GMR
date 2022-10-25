@@ -17,3 +17,13 @@ hitCount = 0;
 bpmTimer = 0;
 iconBop = 0;
 iconBopVsp = 0;
+
+hudSurf = surface_create(1280, 720);
+hudTimer = 0;
+hudBop = 0;
+
+hudAlpha = 0;
+hudAlphaTarget = 1;
+hudAlphaSpd = 0.01;
+
+if (global.songData[$ "player2"] == "gold") hudAlphaTarget = 0;

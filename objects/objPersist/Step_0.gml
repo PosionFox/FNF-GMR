@@ -7,11 +7,13 @@ hudBopVsp += 0.1;
 if (hudBopTimer >= 120)
 {
 	hudBopVsp = 0;
-	//hudBopScale = 1.02;
+	hudBopScale = 0.05;
 	hudBopTimer = 0;
 }
-hudBopTimer += (global.bpm / 60) * global.deltaMultiplier;
-hudBopScale = lerp(hudBopScale, 1, 0.1);
+hudBopTimer += ((global.bpm / 60) / 4) * DTM;
+
+hudBopScale = lerp(hudBopScale, 0, 0.1 * DTM);
+hudAlpha = lerp(hudAlpha, hudAlphaTarget, hudAlphaSpd * DTM);
 //}
 
 // calculate deltatime

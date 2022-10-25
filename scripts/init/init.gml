@@ -1,6 +1,7 @@
 
 global.songData = {};
 global.chart = ds_grid_create(8, 16);
+global.events = array_create(16, 0);
 global.chartNotes = [];
 global.song = Tutorial_Inst;
 global.voices = "";

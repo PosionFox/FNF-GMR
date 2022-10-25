@@ -1,4 +1,4 @@
-if (instance_exists(objDialogBox)) exit;
+/*if (instance_exists(objDialogBox)) exit;
 
 if !(surface_exists(global.hudSurface)) exit;
 surface_set_target(global.hudSurface);

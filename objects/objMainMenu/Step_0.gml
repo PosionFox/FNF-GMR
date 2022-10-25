@@ -63,19 +63,17 @@ if (selectedTimer = 120)
 {
 	if (menuSelected = 0)
 	{
-		o = instance_create_depth(0, 0, -10000, objFade);
+		var o = instance_create_depth(0, 0, -10000, objFade);
 		o.roomTo = rmStoryMenu;
 		if (global.chaCurrent == global.chaMonochrome)
 		{
-			global.nextSong = ["monochrome", ""];
-			global.songOn = 1;
-			loadSongChart(global.nextSong[0]);
+			loadSongChart("monochrome");
 			o.roomTo = stage_get_room("darkness");
 		}
 	}
 	if (menuSelected = 1)
 	{
-		o = instance_create_depth(0, 0, -10000, objFade);
+		var o = instance_create_depth(0, 0, -10000, objFade);
 		o.roomTo = rmFreePlay;
 		if (global.chaCurrent == global.chaMonochrome)
 		{
@@ -85,7 +83,7 @@ if (selectedTimer = 120)
 	}
 	if (menuSelected = 2)
 	{
-		o = instance_create_depth(0, 0, -10000, objFade);
+		var o = instance_create_depth(0, 0, -10000, objFade);
 		o.roomTo = rmOptions;
 	}
 }

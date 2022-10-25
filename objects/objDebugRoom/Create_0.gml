@@ -7,4 +7,4 @@ global.music = audio_play_sound(songToPlay, 10, true);
 
 dif = global.currentDif;
 
-
+selectedEvent = undefined;

@@ -8,7 +8,8 @@ if (keyboard_check_pressed(189)) { global.volume -= 0.1; audio_play_sound(sndCli
 if (keyboard_check_pressed(187)) { global.volume += 0.1; audio_play_sound(sndClickText, 0, false); volumeDisplay = 120; }
 
 // if the volume display has been changed, make the volume ui appear
-if (volumeDisplay > 0) {
+if (volumeDisplay > 0)
+{
 	volumeDisplay--;
 	var width = 80;
 	draw_set_color(c_black);

@@ -1,1 +1,2 @@
-global.chart = ds_grid_create(8, 16);
+
+//global.chart = ds_grid_create(8, 16);

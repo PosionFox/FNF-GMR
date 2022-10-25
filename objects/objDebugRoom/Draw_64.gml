@@ -32,3 +32,5 @@ X = Difficulty
 C = Cam Speed
 R = Reset
 S = Stage select", 20, 10000000);
+
+draw_text(512, 100, string(selectedEvent));

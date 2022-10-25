@@ -30,3 +30,19 @@ function draw_editor_notes(noteGrid, _x, _y)
 		}
 	}
 }
+
+function draw_event_notes(array, _x, _y)
+{
+	var n = array_length(array);
+	
+	for (var i = 0; i < n; i++)
+	{
+		var value = array[i];
+		if (value != 0)
+		{
+			var xx = _x + (0 * 40);
+			var yy = _y + (i * 40);
+			draw_sprite_ext(sprEventArrow, 0, xx, yy, 0.28, 0.28, 0, c_white, 1);
+		}
+	}
+}

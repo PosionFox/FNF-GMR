@@ -5,7 +5,12 @@ ready = false;
 sprite_index = sprGoldHello;
 image_speed = 0;
 
-
+sprites = {};
+sprites.idle = sprGoldIdle;
+sprites.up = sprGoldUp;
+sprites.left = sprGoldLeft;
+sprites.down = sprGoldDown;
+sprites.right = sprGoldRight;
 
 spawnCelebi = function()
 {
@@ -22,9 +27,22 @@ celebi3 = time_source_create(time_source_game, 118, time_source_units_seconds, s
 start = function()
 {
 	//alarm[0] = 60 * 5;
-	var _h = call_later(0.5, time_source_units_seconds, function()
+	var _h1 = call_later(0.5, time_source_units_seconds, function()
 	{
 		ready = true;
+	});
+	var _h2 = call_later(8, time_source_units_seconds, function()
+	{
+		if (instance_exists(objHUD))
+		{
+			objHUD.hudAlphaTarget = 1;
+			objHUD.hudAlphaSpd = 0.008;
+		}
+		if (instance_exists(objPersist))
+		{
+			objPersist.hudAlphaTarget = 1;
+			objPersist.hudAlphaSpd = 0.008;
+		}
 	});
 	//call_later(5, time_source_units_seconds, spawnCelebi, true);
 	time_source_start(celebi1);

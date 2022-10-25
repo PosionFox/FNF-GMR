@@ -41,7 +41,7 @@
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Characters","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E9095D9","properties":[],"isDnd":false,"objectId":{"name":"objBoyfriend","path":"objects/objBoyfriend/objBoyfriend.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.9,"scaleY":0.9,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_7E9095D9","path":"rooms/rmMainGame/rmMainGame.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1408.0,"y":1056.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A050534","properties":[],"isDnd":false,"objectId":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.9,"scaleY":0.9,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_A050534","path":"rooms/rmMainGame/rmMainGame.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":1056.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_CD55ABD","properties":[],"isDnd":false,"objectId":{"name":"objPico","path":"objects/objPico/objPico.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-0.9,"scaleY":0.9,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":1056.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Score","instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Girl","instances":[
@@ -66,7 +66,6 @@
     {"name":"inst_4029B1BD","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_63C43CFB","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_7E9095D9","path":"rooms/rmWeek3/rmWeek3.yy",},
-    {"name":"inst_A050534","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_2AEECE33","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_7010C4C4","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_3B343F25","path":"rooms/rmWeek3/rmWeek3.yy",},
@@ -78,6 +77,7 @@
     {"name":"inst_6E014E10","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_437782F5","path":"rooms/rmWeek3/rmWeek3.yy",},
     {"name":"inst_57FD3201","path":"rooms/rmWeek3/rmWeek3.yy",},
+    {"name":"inst_CD55ABD","path":"rooms/rmWeek3/rmWeek3.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

@@ -1,14 +1,12 @@
-if !(global.dead) {
-	
-// bpm code
-if (bpmTimer >= 120) {
-	iconBopVsp = 0;
-	iconBop = 0.2;
-	bpmTimer = 0 + (bpmTimer - 120);
-}
-bpmTimer += (global.bpm / 60) * global.deltaMultiplier;
 
-if !(global.flashlight) {
+if !(global.dead)
+{
+surface_set_target(hudSurf);
+draw_clear_alpha(c_white, 0);
+// bpm code
+
+if !(global.flashlight)
+{
 	global.hp = clamp(global.hp, 0, 100)
 
 	var hpWidth = (global.hp / hpMax) * healthXOff;
@@ -73,5 +71,6 @@ if (global.advancedHud) or (global.auto) {
 	draw_set_font(fntDefault);
 	draw_set_halign(fa_left);
 }
-
+surface_reset_target();
+draw_surface_ext(hudSurf, 0 - (hudBop * 640), 0 - (hudBop * 360), 1 + hudBop, 1 + hudBop, 0, c_white, hudAlpha);
 }

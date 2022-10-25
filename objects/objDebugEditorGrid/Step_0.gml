@@ -8,8 +8,8 @@ if (room_height / 40 > ds_grid_height(global.chart)) ds_grid_resize(global.chart
 
 var selectedList = global.chart;
 
-var notePosX = -(x - selBoxX) / gridSize;
-var notePosY = -(y - selBoxY) / gridSize;
+notePosX = -(x - selBoxX) / gridSize;
+notePosY = -(y - selBoxY) / gridSize;
 
 //section = ((objEditorCamera.y - y) div ((cellHeight) * sectionSize));
 
@@ -39,6 +39,22 @@ if (fnfBotMode)
 
 if (mouse_check_button_pressed(mb_left)) or (keyboard_check_pressed(vk_anykey)) && (fnfBotMode)
 {
+	if (notePosX == -1)
+	{
+		if (global.events[notePosY] == 0)
+		{
+			global.events[notePosY] =
+			{
+				strumTime : 1000,
+				eventName : "",
+				eventVal1 : "",
+				eventVal2 : "",
+				eventVal3 : ""
+			};
+		}
+		objDebugRoom.selectedEvent = global.events[notePosY];
+	}
+	
 	if (ds_grid_get(selectedList, notePosX, notePosY) = 0)
 	{
 		ds_grid_set(selectedList, notePosX, notePosY, 1);
@@ -49,6 +65,16 @@ if (mouse_check_button_pressed(mb_left)) or (keyboard_check_pressed(vk_anykey)) 
 		if (fnfBotMode) exit;
 		ds_grid_set(selectedList, notePosX, notePosY, 0);
 		//global.chartNotes[notePosX].sectionNotes[notePosX][notePosY] = 0;
+	}
+}
+
+if (mouse_check_button_pressed(mb_right))
+{
+	if (notePosX == -1)
+	{
+		delete global.events[notePosY];
+		global.events[notePosY] = 0;
+		objDebugRoom.selectedEvent = undefined;
 	}
 }
 

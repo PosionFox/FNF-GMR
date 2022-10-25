@@ -208,11 +208,12 @@ function stage_autodetect_by_song(songName)
 			return "senpai";
 		break;
 		case "roses":
-			return "senpai";
+			return "senpaimad";
 		break;
 		case "thorns":
 			return "evilschool";
 		break;
+		
 		case "monochrome":
 			return "darkness";
 		break;
@@ -247,6 +248,9 @@ function stage_get_room(name)
 		break;
 		case "senpai":
 			return rmWeek6;
+		break;
+		case "senpaimad":
+			return rmWeek6_1;
 		break;
 		case "evilschool":
 			return rmWeek6_2;
@@ -379,82 +383,12 @@ function character_get_sprites(name)
 			sprites.downMiss = sprBoyfriendPixelDownMiss;
 			sprites.rightMiss = sprBoyfriendPixelRightMiss;
 		break;
-		case "dad":
-			sprites.idle = sprDadIdle;
-			sprites.up = sprDadUp;
-			sprites.left = sprDadLeft;
-			sprites.down = sprDadDown;
-			sprites.right = sprDadRight;
-		break;
 		case "gf":
 			sprites.idle = sprGirlfriendIdle;
 			sprites.up = sprGirlfriendUp;
 			sprites.left = sprGirlfriendLeft;
 			sprites.down = sprGirlfriendDown;
 			sprites.right = sprGirlfriendRight;
-		break;
-		case "mom-car":
-			sprites.idle = sprMomIdle;
-			sprites.up = sprMomUp;
-			sprites.left = sprMomLeft;
-			sprites.down = sprMomDown;
-			sprites.right = sprMomRight;
-		break;
-		case "monster":
-			sprites.idle = sprMonsterIdle;
-			sprites.up = sprMonsterUp;
-			sprites.left = sprMonsterLeft;
-			sprites.down = sprMonsterDown;
-			sprites.right = sprMonsterRight;
-		break;
-		case "monster-christmas":
-			sprites.idle = sprMonsterChristIdle;
-			sprites.up = sprMonsterChristUp;
-			sprites.left = sprMonsterChristLeft;
-			sprites.down = sprMonsterChristDown;
-			sprites.right = sprMonsterChristRight;
-		break;
-		case "parents-christmas":
-			sprites.idle = sprCParentsDadIdle;
-			sprites.up = sprCParentsDadUp;
-			sprites.left = sprCParentsDadLeft;
-			sprites.down = sprCParentsDadDown;
-			sprites.right = sprCParentsDadRight;
-		break;
-		case "pico":
-			sprites.idle = sprPicoIdle;
-			sprites.up = sprPicoUp;
-			sprites.left = sprPicoLeft;
-			sprites.down = sprPicoDown;
-			sprites.right = sprPicoRight;
-		break;
-		case "senpai":
-			sprites.idle = sprSenpaiIdle;
-			sprites.up = sprSenpaiUp;
-			sprites.left = sprSenpaiLeft;
-			sprites.down = sprSenpaiDown;
-			sprites.right = sprSenpaiRight;
-		break;
-		case "senpai-angry":
-			sprites.idle = sprSenpaiMadIdle;
-			sprites.up = sprSenpaiMadUp;
-			sprites.left = sprSenpaiMadLeft;
-			sprites.down = sprSenpaiMadDown;
-			sprites.right = sprSenpaiMadRight;
-		break;
-		case "spirit":
-			sprites.idle = sprSpiritIdle;
-			sprites.up = sprSpiritUp;
-			sprites.left = sprSpiritLeft;
-			sprites.down = sprSpiritDown;
-			sprites.right = sprSpiritRight;
-		break;
-		case "spooky":
-			sprites.idle = sprSpookyIdle;
-			sprites.up = sprSpookyUp;
-			sprites.left = sprSpookyLeft;
-			sprites.down = sprSpookyDown;
-			sprites.right = sprSpookyRight;
 		break;
 		case "tankman":
 			sprites.idle = sprTankmanIdle;
@@ -463,33 +397,12 @@ function character_get_sprites(name)
 			sprites.down = sprTankmanDown;
 			sprites.right = sprTankmanRight;
 		break;
-		case "whit":
-			sprites.idle = sprWhittyIdle;
-			sprites.up = sprWhittyUp;
-			sprites.left = sprWhittyLeft;
-			sprites.down = sprWhittyDown;
-			sprites.right = sprWhittyRight;
-		break;
-		case "whitbonkers":
-			sprites.idle = sprWhittyCIdle;
-			sprites.up = sprWhittyCUp;
-			sprites.left = sprWhittyCLeft;
-			sprites.down = sprWhittyCDown;
-			sprites.right = sprWhittyCRight;
-		break;
 		case "oxi":
 			sprites.idle = sprOxiIdle;
 			sprites.up = sprOxiUp;
 			sprites.left = sprOxiLeft;
 			sprites.down = sprOxiDown;
 			sprites.right = sprOxiRight;
-		break;
-		case "gold":
-			sprites.idle = sprGoldIdle;
-			sprites.up = sprGoldUp;
-			sprites.left = sprGoldLeft;
-			sprites.down = sprGoldDown;
-			sprites.right = sprGoldRight;
 		break;
 	}
 	return sprites;

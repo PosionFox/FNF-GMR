@@ -2,6 +2,8 @@ gridSize = 40;
 
 selBoxX = 0;
 selBoxY = 0;
+notePosX = 0;
+notePosY = 0;
 
 section = 0;
 dontDraw = false;

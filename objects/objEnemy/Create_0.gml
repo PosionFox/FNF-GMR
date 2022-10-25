@@ -36,7 +36,17 @@ var sprChosen = sprEnemy[global.enemy];
 //sprUp = asset_get_index(sprChosen + "Up");
 //sprRight = asset_get_index(sprChosen + "Right");
 
-sprites = character_get_sprites(global.songData[$ "player2"] ?? "dad");
+//sprites = character_get_sprites(global.songData[$ "player2"] ?? "dad");
+
+if (self[$ "sprites"] == undefined)
+{
+	sprites = {};
+	sprites.idle = sprDadIdle;
+	sprites.up = sprDadUp;
+	sprites.left = sprDadLeft;
+	sprites.down = sprDadDown;
+	sprites.right = sprDadRight;
+}
 
 spritesAlt = {
 	idle : sprCParentsMomIdle,
