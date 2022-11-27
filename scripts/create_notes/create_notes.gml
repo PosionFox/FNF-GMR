@@ -37,9 +37,12 @@ function create_notes(noteGrid)
 						case 7: noteX = 745; break;
 					}
 				}
-				if (global.songData[$ "player2"] == "gold" and w <= 3)
+				if (instance_exists(objEnemy))
 				{
-					noteY += 1000;
+					if (objEnemy.hideArrows and w <= 3)
+					{
+						noteY += 1000;
+					}
 				}
 				
 				// create the note

@@ -79,6 +79,7 @@ if (timeUntilMoveOn >= timeUntilMoveOnMax) && !(global.dead)
 	}
 	
 	// load the next songs chart
+	
 	loadSongChart(global.nextSong[global.songOn]);
 	var roomTo = stage_get_room(global.stage);
 	//load_chart(global.nextSong[global.songOn], global.currentDif);
@@ -87,7 +88,7 @@ if (timeUntilMoveOn >= timeUntilMoveOnMax) && !(global.dead)
 	global.songScore[global.songOn] = global.curScore;
 	
 	// if the next song does not exist
-	if (global.nextSong[global.songOn] = "")
+	if (global.nextSong[global.songOn] == "")
 	{
 		roomTo = rmStoryMenu;
 		if (global.chaCurrent == global.chaMonochrome)

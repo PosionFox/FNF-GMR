@@ -2,6 +2,8 @@
 instance_deactivate_object(self);
 //image_speed = (global.bpm / 60) / 30 * global.deltaMultiplier;
 start = true;
+image_speed = 0;
+muted = false;
 
 // changeable 3 2 1
 snd3 = sndIntro3;
@@ -38,7 +40,7 @@ if !(hasDialog)
 {
 	if !(global.songData[$ "player2"] == "gold")
 	{
-		audio_play_sound(snd3, 10, false);
+		//audio_play_sound(snd3, 10, false);
 	}
 }
 else

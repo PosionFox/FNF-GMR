@@ -2,7 +2,12 @@
 if (ready)
 {
 	instance_activate_all();
-	if (instance_exists(objEnemy)) { objEnemy.onLoad(); }
+	if (instance_exists(objEnemy))
+	{
+		//objEnemy.readyUp();
+		objEnemy.onLoad();
+	}
+	
 	instance_destroy();
 }
 

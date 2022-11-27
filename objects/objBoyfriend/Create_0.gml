@@ -5,7 +5,7 @@ char = "sprBoyfriend";
 flipped = false;
 scale = image_yscale; // the entire scale
 isPixel = false;
-
+ready = true;
 //boyfriend_sprites();
 
 sprites = character_get_sprites(global.songData[$ "player1"] ?? "bf")

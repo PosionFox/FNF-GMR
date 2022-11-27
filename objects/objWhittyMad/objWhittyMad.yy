@@ -29,9 +29,13 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":76,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"icon","path":"objects/objEnemy/objEnemy.yy",},"objectId":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},"value":"sprWhittyMadIcon",},
+  ],
   "parent": {
     "name": "Characters",
     "path": "folders/Objects/Characters.yy",

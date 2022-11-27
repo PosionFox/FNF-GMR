@@ -12,7 +12,7 @@ if (bpmTimer >= 120)
 }
 if (hudTimer >= 120)
 {
-	hudBop = 0.05;
+	hudBop = 0.02;
 	hudTimer = 0;
 }
 bpmTimer += (global.bpm / 60) * DTM;

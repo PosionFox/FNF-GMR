@@ -1,5 +1,8 @@
 // debug
 draw_text_transformed(0, -2, "FPS: " + string(fps), 0.6, 0.6, 0);
+draw_text_transformed(0, 8, "nextSong: " + string(global.nextSong), 0.6, 0.6, 0);
+draw_text_transformed(0, 16, "songOn: " + string(global.songOn), 0.6, 0.6, 0);
+
 //draw_text_transformed(0, 8, global.deltaMultiplier, 0.6, 0.6, 0);
 //draw_text_transformed(0, 16, audio_sound_length(global.songId), 0.6, 0.6, 0);
 

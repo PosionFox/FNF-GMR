@@ -59,7 +59,12 @@ if !(enemy) && !(global.auto)
 			{
 			
 				if !(notRealNote)
-				{	
+				{
+					if (instance_exists(objCamera))
+					{
+						objCamera.xTapOffset = other.xOffsetTap;
+						objCamera.yTapOffset = other.yOffsetTap;
+					}
 					with (other)
 					{
 						sprite_index = sprHit;
@@ -155,6 +160,11 @@ if (bool(noteCol))
 	{
 		if (noteCol.notRealNote) exit;
 		if (noteCol.curNoteSpeed = 0) && (instance_exists(objReady)) exit;
+		if (instance_exists(objCamera))
+		{
+			objCamera.xTapOffset = xOffsetTap;
+			objCamera.yTapOffset = yOffsetTap;
+		}
 		
 		var obj = objEnemy;
 		if (global.enemy = 0) obj = objGirlfriend;
@@ -167,6 +177,11 @@ if (bool(noteCol))
 			instance_destroy(noteCol);
 			obj.holdAnimation = false;
 			obj.animationIndex = 0;
+			global.hp -= objEnemy.healthDrain;
+			if (!objEnemy.healthDrainCanKill)
+			{
+				global.hp = max(global.hp, 1);
+			}
 		}
 		else
 		{
@@ -181,6 +196,11 @@ if (bool(noteCol))
 			{			
 				noteCol.enemyHeld = true;
 				obj.holdAnimation = true;
+				global.hp -= objEnemy.healthDrain / 10;
+				if (!objEnemy.healthDrainCanKill)
+				{
+					global.hp = max(global.hp, 1);
+				}
 			}
 		}
 		
@@ -203,6 +223,10 @@ if (bool(noteCol))
 			
 			var o = instance_create_depth(1254, 485, 400 - instance_number(objScoreText), objScoreText);
 			o.image_index = 0;
+		}
+		else
+		{
+			
 		}
 	}
 }

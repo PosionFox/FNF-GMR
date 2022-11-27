@@ -214,6 +214,9 @@ function stage_autodetect_by_song(songName)
 			return "evilschool";
 		break;
 		
+		case "insomnia":
+			return "feralisleep";
+		break;
 		case "monochrome":
 			return "darkness";
 		break;
@@ -263,6 +266,9 @@ function stage_get_room(name)
 		break;
 		case "darkness":
 			return rmWeekDarkness;
+		break;
+		case "feralisleep":
+			return rmFeralisleep
 		break;
 		
 		default:
@@ -320,7 +326,7 @@ function fetchDifficultyName(_num)
  * @param {string} name name of the character
  * @returns {struct} struct with sprites
  */
-function character_get_sprites(name)
+function character_get_sprites(name) // only for player
 {
 	var sprites = {
 		idle : sprBoyfriendIdle,
@@ -409,7 +415,7 @@ function character_get_sprites(name)
 }
 
 /**
- * Returns a sprite icon
+ * UNUSED Returns a sprite icon
  * @param {string} name name of the character
  * @returns {asset.GMSprite} Description
  */

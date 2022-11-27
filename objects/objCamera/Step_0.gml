@@ -2,6 +2,9 @@
 x = lerp(xTo, x, 0.97);
 y = lerp(yTo, y, 0.97);
 
+xTapOffset = lerp(xTapOffset, 0, 0.02 * DTM);
+yTapOffset = lerp(yTapOffset, 0, 0.02 * DTM);
+
 // if the player is dead, move the camera to him
 if (global.dead)
 {
@@ -10,40 +13,57 @@ if (global.dead)
 }
 else
 {
-	// decide what the position should be for the camera
-	if !(global.turn)
+	if (instance_exists(objCamPointInterest))
 	{
-		// enemy turn
-		if (global.enemy != 0)
+		xTo = objCamPointInterest.x;
+		yTo = objCamPointInterest.y;
+	}
+	else
+	{
+		if (zoomingTimer >= 120)
 		{
-			//xTo = 1049 + offsetX;
-			//yTo = 593 + offsetY;
-			if (instance_exists(objCamPointEnemy))
+			zoomBop = 0.01;
+			zoomingTimer = 0;
+		}
+		zoomingTimer += ((global.bpm / 60) / 4) * DTM;
+		zoomBop = lerp(zoomBop, 0, 0.1 * (((global.bpm / 60) / 4) * DTM));
+		// decide what the position should be for the camera
+	
+		var finalXOffset = offsetX + xTapOffset;
+		var finalYOffset = offsetY + yTapOffset;
+		if !(global.turn)
+		{
+			// enemy turn
+			if (global.enemy != 0)
 			{
-				xTo = objCamPointEnemy.x + offsetX;
-				yTo = objCamPointEnemy.y + offsetY;
+				//xTo = 1049 + offsetX;
+				//yTo = 593 + offsetY;
+				if (instance_exists(objCamPointEnemy))
+				{
+					xTo = objCamPointEnemy.x + finalXOffset;
+					yTo = objCamPointEnemy.y + finalYOffset;
+				}
+			}
+			else
+			{
+				// girlfriend
+				xTo = 1251;
+				yTo = 600;
 			}
 		}
 		else
 		{
-			// girlfriend
-			xTo = 1251;
-			yTo = 600;
+			// bf turn
+			//xTo = 1369 + bfOffsetX;
+			//yTo = 752 + bfOffsetY - (((sprite_get_height(objBoyfriend.sprites.idle)/2) % 8) * 8);	
+			// idk I just wanted to automatically adjust for the height of all characters but I get if you wanna remove that
+			if (instance_exists(objCamPointPlayer))
+			{
+				xTo = objCamPointPlayer.x + finalXOffset;
+				yTo = objCamPointPlayer.y + finalYOffset;
+			}
 		}
 	}
-	else
-	{
-		// bf turn
-		//xTo = 1369 + bfOffsetX;
-		//yTo = 752 + bfOffsetY - (((sprite_get_height(objBoyfriend.sprites.idle)/2) % 8) * 8);	
-		// idk I just wanted to automatically adjust for the height of all characters but I get if you wanna remove that
-		if (instance_exists(objCamPointPlayer))
-		{
-			xTo = objCamPointPlayer.x + offsetX;
-			yTo = objCamPointPlayer.y + offsetY;
-		}
-	}
-
 }
 
 if (keyboard_check_pressed(vk_enter))
@@ -79,4 +99,4 @@ zoom = lerp(zoom, global.camZoom, 0.1);
 
 // change the cameras size
 var cam = view_camera[0];
-camera_set_view_size(cam, global.camWidth / zoom, global.camHeight / zoom);
+camera_set_view_size(cam, global.camWidth / (zoom * (1 + zoomBop)), global.camHeight / (zoom * (1 + zoomBop)));

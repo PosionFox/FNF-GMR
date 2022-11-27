@@ -1,7 +1,7 @@
 
 event_inherited();
 
-singFrameMulti = 2.5;
+
 
 var _t = audio_sound_get_track_position(global.songId);
 if (global.audioSyncGroup) { _t = audio_sync_group_get_track_pos(global.musicSync); }

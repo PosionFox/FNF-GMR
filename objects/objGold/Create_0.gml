@@ -5,6 +5,9 @@ ready = false;
 sprite_index = sprGoldHello;
 image_speed = 0;
 
+singFrameMulti = 2.5;
+
+
 sprites = {};
 sprites.idle = sprGoldIdle;
 sprites.up = sprGoldUp;
@@ -63,6 +66,8 @@ onLoad = function()
 	]
 	var i = irandom(array_length(intros) - 1);
 	audio_play_sound(intros[i], 10, false);
+	objReady.muted = true;
+	objHUD.hpEmptyColor = c_white;
 }
 
 onPause = function()

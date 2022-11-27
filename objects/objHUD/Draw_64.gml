@@ -9,10 +9,11 @@ if !(global.flashlight)
 {
 	global.hp = clamp(global.hp, 0, 100)
 
+	// draw healthbar
 	var hpWidth = (global.hp / hpMax) * healthXOff;
-	draw_rectangle_color(x + outlineWidth, y - outlineWidth, x - healthXOff - outlineWidth, y + healthYOff + outlineWidth, c_black, c_black, c_black, c_black, false);
-	draw_rectangle_color(x, y, x - healthXOff, y + healthYOff, c_red, c_red, c_red, c_red, false);
-	draw_rectangle_color(x, y, x - hpWidth, y + 10, c_lime, c_lime, c_lime, c_lime, false);
+	draw_rectangle_color(x + outlineWidth, y - outlineWidth, x - healthXOff - outlineWidth, y + healthYOff + outlineWidth, hpBackColor, hpBackColor, hpBackColor, hpBackColor, false);
+	draw_rectangle_color(x, y, x - healthXOff, y + healthYOff, hpEmptyColor, hpEmptyColor, hpEmptyColor, hpEmptyColor, false);
+	draw_rectangle_color(x, y, x - hpWidth, y + 10, hpColor, hpColor, hpColor, hpColor, false);
 	draw_rectangle_color(x, y, x - (displayHpMin / hpMax) * healthXOff, y + 10, c_ltgray, c_ltgray, c_ltgray, c_ltgray, false);
 
 	var boyHpLow = (global.hp <= 10) or (global.fragile);
@@ -31,7 +32,11 @@ if !(global.flashlight)
 	if (global.combo >= 100) bfIconSpr = sprIconsBFEpic;
 	
 	//draw_sprite_ext(enemyIconSpr,enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
-	draw_sprite_ext(character_get_icon(global.songData[$ "player2"]),enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
+	//draw_sprite_ext(character_get_icon(global.songData[$ "player2"]),enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
+	if (instance_exists(objEnemy))
+	{
+		draw_sprite_ext(objEnemy.icon,enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
+	}
 	draw_sprite_ext(bfIconSpr,bfIcon + boyHpLow,x - hpWidth, y, -1 + -iconBop, 1 + iconBop, 0, c_white, 1); // boy icon
 }
 

@@ -1,4 +1,5 @@
 // draws the pause menu
+
 curAlpha = lerp(curAlpha, curAlphaTo, 0.1);
 draw_set_color(c_black);
 draw_set_alpha(curAlpha);

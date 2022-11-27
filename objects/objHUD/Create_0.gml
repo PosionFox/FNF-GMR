@@ -5,11 +5,19 @@ hpMax = 100;
 hiddenScore = global.curScore;
 lastFrameWindow = 0;
 
+arrowsX = 0;
+arrowsY = 0;
+
 healthXOff = 601;
 healthYOff = 10;
 outlineWidth = 5;
 
 if (global.downScroll) y = 60;
+
+hpBackColor = c_black;
+hpEmptyColor = c_red;
+hpColor = c_lime;
+
 
 missCount = 0;
 hitCount = 0;

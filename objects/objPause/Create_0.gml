@@ -3,6 +3,9 @@ menus[0] = "exit to menu";
 menus[1] = "restart song";
 menus[2] = "resume";
 
+var cx = camera_get_view_x(view_camera[0]);
+var cy = camera_get_view_y(view_camera[0]);
+pauseSprite = sprite_create_from_surface(application_surface, 0, 0, 1280, 720, false, false, 0, 0)
 curSelected = 2; // decides which menu in the list is selected
 timer = 20; // timer prevents from events being activated instantly
 

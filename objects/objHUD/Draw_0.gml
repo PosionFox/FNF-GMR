@@ -51,6 +51,6 @@ if (objPersist.timeUntilMoveOn < objPersist.timeUntilMoveOnMax)
 	var camHeightDown = ((global.camHeight / global.camZoom) * global.downScroll) * (1 + hudBop);
 	var camHeightNegative = global.camHeight / global.camZoom;
 	if (global.downScroll) camHeightNegative = -global.camHeight;
-	draw_surface_ext(global.hudSurface, camX - (hudBop * 640), (camY + camHeightDown) - (hudBop * 360), ((global.camWidth / global.camZoom) / 1280) * (1 + hudBop), ((camHeightNegative / global.camZoom) / 720) * (1 + hudBop), 0, c_white, hudAlpha);
+	draw_surface_ext(global.hudSurface, arrowsX + camX - (hudBop * 640), arrowsY + (camY + camHeightDown) - (hudBop * 360), ((global.camWidth / global.camZoom) / 1280) * (1 + hudBop), ((camHeightNegative / global.camZoom) / 720) * (1 + hudBop), 0, c_white, hudAlpha);
 	
 }

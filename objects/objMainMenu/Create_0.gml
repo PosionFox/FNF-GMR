@@ -9,3 +9,5 @@ textFlash[1] = 1;
 textFlash[2] = 1;
 textFlash[3] = 1;
 bgFlash = 0;
+
+global.songOn = 0;

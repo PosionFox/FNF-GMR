@@ -11,6 +11,7 @@ global.bpm = 100;
 global.noteSpeed = 5;
 global.camSpeed = 360; // BPM * 2.85256410256
 global.songName = "Tutorial";
+global.hideArrows = false;
 
 global.boyfriend = "og";
 

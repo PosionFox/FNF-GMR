@@ -8,9 +8,9 @@ if (instance_exists(objPersist))
 	objPersist.oldCamY = 692;
 }
 
-// set where the cam should go
-xTo = 1369;
-yTo = 772;
+xTo = 0;
+yTo = 0;
+alarm[0] = 1;
 
 // offsets for the bf and enemy
 offsetX = 0;
@@ -19,11 +19,16 @@ offsetY = 0;
 bfOffsetX = 0;
 bfOffsetY = 0;
 
+xTapOffset = 0;
+yTapOffset = 0;
+
 // changes the cam zoom
 //global.camWidth = 1280;
 //global.camHeight = 720;
-global.camZoom = 1;
+global.camZoom = leZoom;
 zoom = global.camZoom;
+zoomBop = 0;
+zoomingTimer = 0;
 
 // flashlight position
 flashX = 1280 / 2;
