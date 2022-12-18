@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Fresh_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Fresh_Voices.ogg",
   "duration": 82.02949,
   "parent": {
-    "name": "Fresh",
-    "path": "folders/Sounds/Music/Week 1/Fresh.yy",
+    "name": "Dad",
+    "path": "folders/Game/Characters/Dad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Fresh_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

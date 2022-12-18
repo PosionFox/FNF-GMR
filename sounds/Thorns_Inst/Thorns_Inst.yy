@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Thorns_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Thorns_Inst.ogg",
   "duration": 106.109,
   "parent": {
-    "name": "Thorns",
-    "path": "folders/Sounds/Music/Week 6/Thorns.yy",
+    "name": "Senpai",
+    "path": "folders/Game/Characters/Senpai.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Thorns_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -37,7 +37,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"icon","path":"objects/objEnemy/objEnemy.yy",},"objectId":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},"value":"sprWhittyMadIcon",},
   ],
   "parent": {
-    "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

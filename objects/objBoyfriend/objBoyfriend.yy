@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "name": "Boyfriend",
+    "path": "folders/Game/Characters/Boyfriend.yy",
   },
 }

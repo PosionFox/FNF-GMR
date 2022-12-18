@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "freeplay_ui",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "path": "folders/Game/Scripts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "freeplay_ui",
-  "tags": [],
-  "resourceType": "GMScript",
 }

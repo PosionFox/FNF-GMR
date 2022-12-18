@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Saving & Loading",
-    "path": "folders/Scripts/Saving & Loading.yy",
+    "path": "folders/Game/Scripts/Saving & Loading.yy",
   },
 }

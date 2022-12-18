@@ -87,6 +87,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Codist Wtf",
-    "path": "folders/Sprites/Characters/Boyfriend/Codist Wtf.yy",
+    "path": "folders/Game/Characters/Boyfriend/Codist Wtf.yy",
   },
 }

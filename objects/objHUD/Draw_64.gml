@@ -1,6 +1,7 @@
 
 if !(global.dead)
 {
+if (!surface_exists(hudSurf)) hudSurf = surface_create(1280, 720);
 surface_set_target(hudSurf);
 draw_clear_alpha(c_white, 0);
 // bpm code
@@ -68,7 +69,8 @@ if (global.advancedHud) or (global.auto) {
 	draw_set_halign(fa_center);
 	draw_set_font(fntDefaultOutline);
 	
-	var str = "HP: " + string(round(global.hp)) + "%" + "          " + "MISSES: " + string(missCount) + "          " + "ACCURACY: " + string(round(100 - ((missCount / (hitCount + missCount)) * 100))) + "%";
+	var accuracy = round(100 - ((missCount / (hitCount + missCount)) * 100));
+	var str = "HP: " + string(round(global.hp)) + "%" + "          " + "MISSES: " + string(missCount) + "          " + "ACCURACY: " + string(accuracy) + "%";
 	if (global.auto) str = "! AUTO MODE !";
 	draw_text_transformed(640, 670, str, 1, 1, 0);	
 	draw_text_transformed(640, 690, string(lastFrameWindow) + "ms", 1, 1, 0);
@@ -77,5 +79,6 @@ if (global.advancedHud) or (global.auto) {
 	draw_set_halign(fa_left);
 }
 surface_reset_target();
+if (!surface_exists(hudSurf)) hudSurf = surface_create(1280, 720);
 draw_surface_ext(hudSurf, 0 - (hudBop * 640), 0 - (hudBop * 360), 1 + hudBop, 1 + hudBop, 0, c_white, hudAlpha);
 }

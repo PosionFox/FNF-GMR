@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Senpai_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Senpai_Voices.ogg",
-  "duration": 98.3250656,
+  "duration": 98.325066,
   "parent": {
     "name": "Senpai",
-    "path": "folders/Sounds/Music/Week 6/Senpai.yy",
+    "path": "folders/Game/Characters/Senpai.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Senpai_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -1,8 +1,12 @@
 {
+  "resourceType": "GMFont",
+  "resourceVersion": "1.0",
+  "name": "fntDefaultOutline",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Pixter-Granular",
   "styleName": "Regular",
   "size": 15.0,
@@ -20,6 +24,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":5,"h":30,"character":32,"shift":5,"offset":0,},
     "33": {"x":178,"y":66,"w":2,"h":30,"character":33,"shift":5,"offset":2,},
@@ -128,10 +133,6 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Fonts.yy",
+    "path": "folders/Game/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "fntDefaultOutline",
-  "tags": [],
-  "resourceType": "GMFont",
 }

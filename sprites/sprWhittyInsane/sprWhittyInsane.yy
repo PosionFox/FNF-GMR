@@ -21,8 +21,8 @@
   "width": 691,
   "height": 487,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "tgWhittyMad",
+    "path": "texturegroups/tgWhittyMad",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -234,7 +234,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

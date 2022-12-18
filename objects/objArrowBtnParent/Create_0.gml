@@ -8,6 +8,7 @@ dir = Notes.down;
 
 xOffsetTap = 0;
 yOffsetTap = 0;
+offset_tap_mult = 1;
 
 botTimer = 0;
 

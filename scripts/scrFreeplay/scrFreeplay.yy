@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Freeplay",
-    "path": "folders/Scripts/Saving & Loading/Freeplay.yy",
+    "path": "folders/Game/Scripts/Saving & Loading/Freeplay.yy",
   },
 }

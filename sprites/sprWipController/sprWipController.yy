@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Note Skins",
-    "path": "folders/Sprites/Arrows/Note Skins.yy",
+    "path": "folders/Game/Sprites/Arrows/Note Skins.yy",
   },
 }

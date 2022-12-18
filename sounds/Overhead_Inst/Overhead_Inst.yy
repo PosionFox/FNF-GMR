@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Overhead_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Overhead_Inst.ogg",
-  "duration": 127.717651,
+  "duration": 127.712654,
   "parent": {
-    "name": "Overhead",
-    "path": "folders/Sounds/Music/Special/Overhead.yy",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Overhead_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

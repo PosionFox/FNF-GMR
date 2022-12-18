@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Title",
-    "path": "folders/Objects/Other/Title.yy",
+    "path": "folders/Game/Objects/Other/Title.yy",
   },
 }

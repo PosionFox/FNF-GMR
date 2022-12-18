@@ -17,7 +17,7 @@
   "soundFile": "Monochrome_Voices.ogg",
   "duration": 148.39064,
   "parent": {
-    "name": "Monochrome",
-    "path": "folders/Sounds/Music/Monochrome.yy",
+    "name": "Gold",
+    "path": "folders/Game/Characters/Gold.yy",
   },
 }

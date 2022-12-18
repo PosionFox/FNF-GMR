@@ -65,20 +65,44 @@ if (selectedTimer = 120)
 	{
 		var o = instance_create_depth(0, 0, -10000, objFade);
 		o.roomTo = rmStoryMenu;
-		if (global.chaCurrent == global.chaMonochrome)
+		if (global.chaCurrent != "")
 		{
-			loadSongChart("monochrome");
-			o.roomTo = stage_get_room("darkness");
+			global.songOn = 0;
+			global.freeplay = true;
+			global.nextSong[0] = "";
+			switch (global.chaCurrent)
+			{
+				case global.chaMonochrome:
+					loadSongChart("monochrome");
+				break;
+				case global.chaInsomnia:
+					global.currentDif = 2;
+					loadSongChart("insomnia");
+				break;
+			}
+			o.roomTo = stage_get_room(global.stage);
 		}
 	}
 	if (menuSelected = 1)
 	{
 		var o = instance_create_depth(0, 0, -10000, objFade);
 		o.roomTo = rmFreePlay;
-		if (global.chaCurrent == global.chaMonochrome)
+		if (global.chaCurrent != "")
 		{
-			loadSongChart("monochrome");
-			o.roomTo = stage_get_room("darkness");
+			global.songOn = 0;
+			global.freeplay = true;
+			global.nextSong[0] = "";
+			switch (global.chaCurrent)
+			{
+				case global.chaMonochrome:
+					loadSongChart("monochrome");
+				break;
+				case global.chaInsomnia:
+					global.currentDif = 2;
+					loadSongChart("insomnia");
+				break;
+			}
+			o.roomTo = stage_get_room(global.stage);
 		}
 	}
 	if (menuSelected = 2)

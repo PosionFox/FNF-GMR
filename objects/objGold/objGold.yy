@@ -40,6 +40,6 @@
   ],
   "parent": {
     "name": "Gold",
-    "path": "folders/Objects/Characters/Gold.yy",
+    "path": "folders/Game/Characters/Gold.yy",
   },
 }

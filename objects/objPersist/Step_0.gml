@@ -40,7 +40,7 @@ if (variable_global_exists("musicSync") and global.songIsPlaying)
 	
 	if (!f_playing(_audio))
 	{
-		timeUntilMoveOn += DT;
+		timeUntilMoveOn += 0.02 * DTM;
 	}
 	
 	//if (finalTime <= 0) // fix song skip early
@@ -91,7 +91,7 @@ if (timeUntilMoveOn >= timeUntilMoveOnMax) && !(global.dead)
 	if (global.nextSong[global.songOn] == "")
 	{
 		roomTo = rmStoryMenu;
-		if (global.chaCurrent == global.chaMonochrome)
+		if (global.chaCurrent != "")
 		{
 			gxc_challenge_submit_score(global.curScore);
 			roomTo = rmMainMenu;
@@ -120,7 +120,7 @@ if (timeUntilMoveOn >= timeUntilMoveOnMax) && !(global.dead)
 	if (global.freeplay) 
 	{
 		roomTo = rmFreePlay;
-		if (global.chaCurrent == global.chaMonochrome)
+		if (global.chaCurrent != "")
 		{
 			roomTo = rmMainGame;
 		}

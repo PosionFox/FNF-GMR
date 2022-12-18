@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Arrows",
-    "path": "folders/Sprites/Arrows.yy",
+    "path": "folders/Game/Sprites/Arrows.yy",
   },
 }

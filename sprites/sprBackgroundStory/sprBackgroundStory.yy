@@ -93,6 +93,6 @@
   },
   "parent": {
     "name": "Backgrounds",
-    "path": "folders/Sprites/Backgrounds.yy",
+    "path": "folders/Game/Sprites/Backgrounds.yy",
   },
 }

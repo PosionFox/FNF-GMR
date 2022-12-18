@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Milf_Voices",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Milf_Voices.mp3",
-  "duration": 124.687447,
+  "duration": 124.68745,
   "parent": {
-    "name": "Milf",
-    "path": "folders/Sounds/Music/Week 4/Milf.yy",
+    "name": "Mom",
+    "path": "folders/Game/Characters/Mom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Milf_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

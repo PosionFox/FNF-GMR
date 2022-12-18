@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Roses_Inst",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Roses_Inst.ogg",
   "duration": 91.95292,
   "parent": {
-    "name": "Roses",
-    "path": "folders/Sounds/Music/Week 6/Roses.yy",
+    "name": "Senpai",
+    "path": "folders/Game/Characters/Senpai.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Roses_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

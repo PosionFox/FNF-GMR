@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Eggnog_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Eggnog_Voices.mp3",
   "duration": 94.0197,
   "parent": {
-    "name": "Eggnog",
-    "path": "folders/Sounds/Music/Week 5/Eggnog.yy",
+    "name": "Christmas Parents",
+    "path": "folders/Game/Characters/Christmas Parents.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Eggnog_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

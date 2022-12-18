@@ -1,6 +1,7 @@
 
 event_inherited();
 
+texGroup = "tgGold";
 ready = false;
 sprite_index = sprGoldHello;
 image_speed = 0;
@@ -68,6 +69,7 @@ onLoad = function()
 	audio_play_sound(intros[i], 10, false);
 	objReady.muted = true;
 	objHUD.hpEmptyColor = c_white;
+	objArrowBtnParent.offset_tap_mult = 10;
 }
 
 onPause = function()

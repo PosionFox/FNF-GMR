@@ -38,6 +38,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ArrowuButtons",
-    "path": "folders/Objects/UI/ArrowuButtons.yy",
+    "path": "folders/Game/Objects/UI/ArrowuButtons.yy",
   },
 }

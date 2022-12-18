@@ -13,4 +13,4 @@ sprites.right = sprSpookyRight;
 
 // Inherit the parent event
 event_inherited();
-
+texGroup = "tgWeek2";

@@ -147,6 +147,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Spooky",
-    "path": "folders/Sprites/Backgrounds/Stages/Senpai/Spooky.yy",
+    "path": "folders/Game/Sprites/Backgrounds/Stages/Senpai/Spooky.yy",
   },
 }

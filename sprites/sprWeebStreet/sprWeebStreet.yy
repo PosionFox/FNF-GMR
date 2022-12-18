@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Senpai",
-    "path": "folders/Sprites/Backgrounds/Stages/Senpai.yy",
+    "path": "folders/Game/Sprites/Backgrounds/Stages/Senpai.yy",
   },
 }

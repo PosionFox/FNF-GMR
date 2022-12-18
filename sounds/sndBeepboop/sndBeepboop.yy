@@ -17,7 +17,7 @@
   "soundFile": "sndBeepboop.ogg",
   "duration": 0.379841,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

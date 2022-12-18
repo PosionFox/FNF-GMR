@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Winter_Horrorland_Voices",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Winter_Horrorland_Voices.ogg",
   "duration": 132.8899,
   "parent": {
-    "name": "Winter Horrorland",
-    "path": "folders/Sounds/Music/Week 5/Winter Horrorland.yy",
+    "name": "Monster",
+    "path": "folders/Game/Characters/Monster.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Winter_Horrorland_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -18,6 +18,6 @@
   "duration": 2.298776,
   "parent": {
     "name": "UI",
-    "path": "folders/Sounds/Sounds/UI.yy",
+    "path": "folders/Game/Sounds/Sounds/UI.yy",
   },
 }

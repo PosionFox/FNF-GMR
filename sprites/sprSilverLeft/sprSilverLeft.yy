@@ -21,14 +21,14 @@
   "width": 363,
   "height": 533,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "tgSilver",
+    "path": "texturegroups/tgSilver",
   },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3341643d-2372-404a-9afe-99fac752ada7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"10acd4dd-78a2-450c-a8d4-c330160f6600",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1a1101e5-37fa-49e8-a046-e774af084f0e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d611a6b7-9591-4c40-bf97-02ac9f2753c2",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9ffb60b-908e-40f1-8562-4a97dea52687",},
@@ -63,7 +63,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4f0b2f47-7b8a-4748-a96d-55276ee6197e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3341643d-2372-404a-9afe-99fac752ada7","path":"sprites/sprSilverLeft/sprSilverLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"759d41cd-c710-4ad1-9b38-1975521aa62f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10acd4dd-78a2-450c-a8d4-c330160f6600","path":"sprites/sprSilverLeft/sprSilverLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"df229ec2-a9ec-4815-93c1-dba23c2299e9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1a1101e5-37fa-49e8-a046-e774af084f0e","path":"sprites/sprSilverLeft/sprSilverLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"157c219a-8890-47ff-beae-7d3012b28a91","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d611a6b7-9591-4c40-bf97-02ac9f2753c2","path":"sprites/sprSilverLeft/sprSilverLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d4cdb465-006e-490c-87e8-2b020f46cbd2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9ffb60b-908e-40f1-8562-4a97dea52687","path":"sprites/sprSilverLeft/sprSilverLeft.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -104,7 +104,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Silver",
+    "path": "folders/Game/Characters/Silver.yy",
   },
 }

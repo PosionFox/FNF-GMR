@@ -17,7 +17,7 @@
   "soundFile": "sndFire.ogg",
   "duration": 3.0,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

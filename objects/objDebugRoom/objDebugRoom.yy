@@ -42,6 +42,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Debug",
-    "path": "folders/Objects/Debug.yy",
+    "path": "folders/Game/Objects/Debug.yy",
   },
 }

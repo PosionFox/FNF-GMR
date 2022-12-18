@@ -17,7 +17,7 @@
   "soundFile": "sndBfOoo.mp3",
   "duration": 0.417959,
   "parent": {
-    "name": "Boyfriend Sounds",
-    "path": "folders/Sounds/Boyfriend Sounds.yy",
+    "name": "Boyfriend",
+    "path": "folders/Game/Characters/Boyfriend.yy",
   },
 }

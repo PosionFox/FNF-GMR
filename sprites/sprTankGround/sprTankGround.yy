@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Tank",
-    "path": "folders/Sprites/Backgrounds/Stages/Tank.yy",
+    "path": "folders/Game/Sprites/Backgrounds/Stages/Tank.yy",
   },
 }

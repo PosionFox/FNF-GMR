@@ -17,7 +17,7 @@
   "soundFile": "sndSouljaboyCrank.ogg",
   "duration": 3.828005,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

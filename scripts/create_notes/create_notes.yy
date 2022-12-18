@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Editor",
-    "path": "folders/Scripts/Editor.yy",
+    "path": "folders/Game/Scripts/Editor.yy",
   },
 }

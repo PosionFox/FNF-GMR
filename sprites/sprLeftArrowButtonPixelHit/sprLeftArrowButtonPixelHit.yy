@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Hit",
-    "path": "folders/Sprites/Arrows/Pixel/Buttons/Hit.yy",
+    "path": "folders/Game/Sprites/Arrows/Pixel/Buttons/Hit.yy",
   },
 }

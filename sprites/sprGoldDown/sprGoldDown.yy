@@ -93,7 +93,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 248,
-    "yorigin": 333,
+    "yorigin": 373,
     "eventToFunction": {},
     "eventStubScript": null,
   },
@@ -103,6 +103,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Gold",
-    "path": "folders/Sprites/Characters/Gold.yy",
+    "path": "folders/Game/Characters/Gold.yy",
   },
 }

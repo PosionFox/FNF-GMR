@@ -107,6 +107,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Spirit",
-    "path": "folders/Sprites/Characters/Senpai/Spirit.yy",
+    "path": "folders/Game/Characters/Senpai/Spirit.yy",
   },
 }

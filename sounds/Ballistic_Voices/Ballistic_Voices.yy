@@ -17,7 +17,7 @@
   "soundFile": "ballistic_Voices.ogg",
   "duration": 153.40515,
   "parent": {
-    "name": "Ballistic",
-    "path": "folders/Sounds/Music/Special/Ballistic.yy",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "Fresh_Inst.ogg",
   "duration": 82.05061,
   "parent": {
-    "name": "Fresh",
-    "path": "folders/Sounds/Music/Week 1/Fresh.yy",
+    "name": "Dad",
+    "path": "folders/Game/Characters/Dad.yy",
   },
 }

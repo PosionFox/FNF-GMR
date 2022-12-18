@@ -177,10 +177,13 @@ if (bool(noteCol))
 			instance_destroy(noteCol);
 			obj.holdAnimation = false;
 			obj.animationIndex = 0;
-			global.hp -= objEnemy.healthDrain;
-			if (!objEnemy.healthDrainCanKill)
+			if (instance_exists(objEnemy))
 			{
-				global.hp = max(global.hp, 1);
+				global.hp -= objEnemy.healthDrain;
+				if (!objEnemy.healthDrainCanKill)
+				{
+					global.hp = max(global.hp, 1);
+				}
 			}
 		}
 		else
@@ -196,10 +199,13 @@ if (bool(noteCol))
 			{			
 				noteCol.enemyHeld = true;
 				obj.holdAnimation = true;
-				global.hp -= objEnemy.healthDrain / 10;
-				if (!objEnemy.healthDrainCanKill)
+				if (instance_exists(objEnemy))
 				{
-					global.hp = max(global.hp, 1);
+					global.hp -= objEnemy.healthDrain / 10;
+					if (!objEnemy.healthDrainCanKill)
+					{
+						global.hp = max(global.hp, 1);
+					}
 				}
 			}
 		}

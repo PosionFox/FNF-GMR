@@ -16,3 +16,5 @@ sprites.right = sprMonsterRight;
 
 // Inherit the parent event
 event_inherited();
+
+texGroup = "tgWeek2";

@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Codist_says_things_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Codist_says_things_Inst.mp3",
-  "duration": 59.6947975,
+  "duration": 59.694798,
   "parent": {
     "name": "Special",
-    "path": "folders/Sounds/Music/Special.yy",
+    "path": "folders/Game/Sounds/Music/Special.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Codist_says_things_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

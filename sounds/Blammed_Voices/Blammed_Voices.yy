@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Blammed_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Blammed_Voices.ogg",
-  "duration": 106.912186,
+  "duration": 106.90719,
   "parent": {
-    "name": "Blammed",
-    "path": "folders/Sounds/Music/Week 3/Blammed.yy",
+    "name": "Pico",
+    "path": "folders/Game/Characters/Pico.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Blammed_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

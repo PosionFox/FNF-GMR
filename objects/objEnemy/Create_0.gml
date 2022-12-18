@@ -1,6 +1,7 @@
 
 ready = true;
 
+texGroup = "";
 image_speed = 1;
 dir = Notes.left;
 animationTimer = 0;
@@ -9,6 +10,8 @@ holdAnimation = false;
 singFrameMulti = 1;
 bpmTimer = 0;
 threeFrame = false;
+
+killIfLowAccuracy = false;
 
 sprEnemy[0] = "sprGirlfriend";
 sprEnemy[1] = "sprDad";

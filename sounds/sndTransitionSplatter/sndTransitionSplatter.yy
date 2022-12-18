@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sndTransitionSplatter",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Guns_Inst.ogg",
-  "duration": 140.449585,
+  "soundFile": "sndTransitionSplatter.ogg",
+  "duration": 1.204104,
   "parent": {
-    "name": "Guns",
-    "path": "folders/Sounds/Music/Week 7/Guns.yy",
+    "name": "Silver",
+    "path": "folders/Game/Characters/Silver.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Guns_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

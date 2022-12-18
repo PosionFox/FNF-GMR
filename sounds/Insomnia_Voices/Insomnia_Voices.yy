@@ -17,7 +17,7 @@
   "soundFile": "Insomnia_Voices.ogg",
   "duration": 297.77524,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Silver",
+    "path": "folders/Game/Characters/Silver.yy",
   },
 }

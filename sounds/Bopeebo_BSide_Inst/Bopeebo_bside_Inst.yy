@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Bopeebo_bside_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -14,10 +18,6 @@
   "duration": 67.005,
   "parent": {
     "name": "Bopeebo",
-    "path": "folders/Sounds/Music/Special/B-Sides/Week 1/Bopeebo.yy",
+    "path": "folders/Game/Sounds/Music/Special/B-Sides/Week 1/Bopeebo.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Bopeebo_bside_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

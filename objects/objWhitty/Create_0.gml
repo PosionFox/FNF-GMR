@@ -10,7 +10,7 @@ sprites.right = sprWhittyRight;
 
 event_inherited();
 
-
+texGroup = "tgWhitty";
 seq = undefined;
 
 if (global.songData[$ "song"] == "Lo-Fight")
@@ -26,6 +26,15 @@ if (global.songData[$ "song"] == "Lo-Fight")
 		layer_sequence_xscale(seq, 1.6);
 		layer_sequence_yscale(seq, 1.6);
 	}
+}
+
+startLofight = function()
+{
+	visible = true;
+	ready = true;
+	layer_set_visible("Girl", true);
+	objHUD.hudAlphaTarget = 1;
+	objReady.start = true;
 }
 
 onPause = function()

@@ -5,7 +5,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 5,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -60,7 +60,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 169,
+    "xorigin": 149,
     "yorigin": 73,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -71,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Icons",
-    "path": "folders/Sprites/Other/UI/Icons.yy",
+    "path": "folders/Game/Sprites/Other/UI/Icons.yy",
   },
 }

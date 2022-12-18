@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "South_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "South_Inst.ogg",
   "duration": 88.74296,
   "parent": {
-    "name": "South",
-    "path": "folders/Sounds/Music/Week 2/South.yy",
+    "name": "Spooky",
+    "path": "folders/Game/Characters/Spooky.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "South_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

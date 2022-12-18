@@ -71,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pico",
-    "path": "folders/Sprites/Characters/Pico.yy",
+    "path": "folders/Game/Characters/Pico.yy",
   },
 }

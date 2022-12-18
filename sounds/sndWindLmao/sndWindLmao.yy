@@ -17,7 +17,7 @@
   "soundFile": "sndWindLmao.ogg",
   "duration": 16.346848,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

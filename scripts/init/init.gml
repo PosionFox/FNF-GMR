@@ -1,4 +1,5 @@
 
+global.tgLoadMethod = "dynamic";
 global.songData = {};
 global.chart = ds_grid_create(8, 16);
 global.events = array_create(16, 0);
@@ -20,7 +21,7 @@ global.curScore = 0;
 global.combo = 0;
 
 global.songIsPlaying = false;
-global.previousLoadedSprites = [];
+global.previousLoadedSprites = [0];
 
 // voice muting
 global.playVoice = 1;
@@ -101,4 +102,5 @@ global.currentDif = 1;
 global.useProgramDir = true;
 
 global.chaMonochrome = "1f72c3fc-92fb-4690-a177-e712f36bbd14";
+global.chaInsomnia = "7b03fa6f-f9a0-4944-a6a8-28f03e2ab0a5"
 global.chaCurrent = gxc_get_query_param("challenge") ?? "";

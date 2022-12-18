@@ -14,3 +14,4 @@ sprites.right = sprSenpaiMadRight;
 
 // Inherit the parent event
 event_inherited();
+texGroup = "tgWeek6";

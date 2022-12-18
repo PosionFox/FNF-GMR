@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sndFeraligatrWakes",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Ugh_Inst.ogg",
-  "duration": 86.62898,
+  "soundFile": "sndFeraligatrWakes.ogg",
+  "duration": 10.6,
   "parent": {
-    "name": "Ugh",
-    "path": "folders/Sounds/Music/Week 7/Ugh.yy",
+    "name": "Silver",
+    "path": "folders/Game/Characters/Silver.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Ugh_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

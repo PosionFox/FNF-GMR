@@ -9,7 +9,17 @@ sprites.right = sprWhittyCRight;
 
 event_inherited();
 
+texGroup = "tgWhittyMad";
 seq = undefined;
+
+startBallistic = function()
+{
+	visible = true;
+	ready = true;
+	layer_set_visible("Girl", true)
+	objHUD.hudAlphaTarget = 1;
+	objReady.start = true;
+}
 
 onLoad = function()
 {

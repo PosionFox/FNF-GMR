@@ -17,7 +17,7 @@
   "soundFile": "sndOuchMyToe.ogg",
   "duration": 6.361882,
   "parent": {
-    "name": "Friday Night Funkin Gamemaker Remake",
-    "path": "Friday Night Funkin Gamemaker Remake.yyp",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

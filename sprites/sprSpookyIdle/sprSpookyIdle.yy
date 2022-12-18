@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Spooky",
-    "path": "folders/Sprites/Characters/Spooky.yy",
+    "path": "folders/Game/Characters/Spooky.yy",
   },
 }

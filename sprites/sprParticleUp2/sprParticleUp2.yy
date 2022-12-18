@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Particle",
-    "path": "folders/Sprites/Arrows/Particle.yy",
+    "path": "folders/Game/Sprites/Arrows/Particle.yy",
   },
 }

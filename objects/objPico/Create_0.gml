@@ -8,4 +8,4 @@ sprites.right = sprPicoRight;
 
 event_inherited();
 
-
+texGroup = "tgWeek3";

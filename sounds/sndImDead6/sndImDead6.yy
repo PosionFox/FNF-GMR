@@ -17,7 +17,7 @@
   "soundFile": "sndImDead6.ogg",
   "duration": 3.950792,
   "parent": {
-    "name": "Monochrome",
-    "path": "folders/Sounds/Music/Monochrome.yy",
+    "name": "Gold",
+    "path": "folders/Game/Characters/Gold.yy",
   },
 }

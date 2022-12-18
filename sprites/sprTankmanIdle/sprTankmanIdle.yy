@@ -87,6 +87,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Tankman",
-    "path": "folders/Sprites/Characters/Tankman.yy",
+    "path": "folders/Game/Characters/Tankman.yy",
   },
 }

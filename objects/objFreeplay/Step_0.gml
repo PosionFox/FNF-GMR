@@ -78,6 +78,15 @@ if (input.enter)
 	global.freeplay = true;
 	global.nextSong[0] = "";
 	//load_chart(songString, global.currentDif);
+	switch (songString)
+	{
+		case "monochrome":
+			global.currentDif = 1;
+		break;
+		case "insomnia":
+			global.currentDif = 2;
+		break;
+	}
 	show_debug_message("freeplay song string: " + string(songString));
 	loadSongChart(songString);
 	

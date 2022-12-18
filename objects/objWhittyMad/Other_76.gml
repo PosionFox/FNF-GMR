@@ -4,11 +4,7 @@ if (event_data[? "event_type"] == "sequence event")
     switch (event_data[? "message"])
     {
         case "startBallistic":
-            visible = true;
-			ready = true;
-			layer_set_visible("Girl", true)
-			objHUD.hudAlphaTarget = 1;
-			objReady.start = true;
+            startBallistic();
         break;
     }
 }

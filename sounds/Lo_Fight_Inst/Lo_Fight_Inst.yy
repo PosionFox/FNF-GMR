@@ -17,7 +17,7 @@
   "soundFile": "Lo_Fight_Inst.ogg",
   "duration": 112.84898,
   "parent": {
-    "name": "Lo-Fight",
-    "path": "folders/Sounds/Music/Special/Lo-Fight.yy",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
 }

@@ -62,7 +62,7 @@ if !(global.auto)
 		sprite_index = sprites.die;
 		image_index = 0;
 		image_speed = 1;
-		if (global.chaCurrent == global.chaMonochrome)
+		if (global.chaCurrent != "")
 		{
 			gxc_challenge_submit_score(global.curScore);
 		}
@@ -119,12 +119,13 @@ if !(global.auto)
 			if (global.freeplay)
 			{
 				roomTo = rmFreePlay;
-			} else
+			}
+			else
 			{
 				audio_play_sound(sndFreakyMenu, 100, true);
 				roomTo = rmStoryMenu;
 			}
-			if (global.chaCurrent == global.chaMonochrome)
+			if (global.chaCurrent != "")
 			{
 				roomTo = rmMainMenu;
 			}

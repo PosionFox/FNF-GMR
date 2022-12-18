@@ -1,4 +1,5 @@
 // chart info
+texturegroup_load("Default");
 surface_depth_disable(true);
 
 global.roomBefore = room;

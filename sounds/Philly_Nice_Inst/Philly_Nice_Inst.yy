@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Philly_Nice_Inst",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Philly_Nice_Inst.ogg",
-  "duration": 101.485718,
+  "duration": 101.48572,
   "parent": {
-    "name": "Philly",
-    "path": "folders/Sounds/Music/Week 3/Philly.yy",
+    "name": "Pico",
+    "path": "folders/Game/Characters/Pico.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Philly_Nice_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

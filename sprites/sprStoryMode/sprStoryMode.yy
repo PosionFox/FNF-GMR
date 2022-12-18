@@ -74,6 +74,6 @@
   "nineSlice": null,
   "parent": {
     "name": "MainMenu",
-    "path": "folders/Sprites/Other/MainMenu.yy",
+    "path": "folders/Game/Sprites/Other/MainMenu.yy",
   },
 }

@@ -18,6 +18,6 @@
   "duration": 4.083333,
   "parent": {
     "name": "Pixel",
-    "path": "folders/Sounds/Sounds/Pixel.yy",
+    "path": "folders/Game/Sounds/Sounds/Pixel.yy",
   },
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "High_Voices",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "High_Voices.mp3",
-  "duration": 105.613052,
+  "duration": 105.61305,
   "parent": {
-    "name": "High",
-    "path": "folders/Sounds/Music/Week 4/High.yy",
+    "name": "Mom",
+    "path": "folders/Game/Characters/Mom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "High_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

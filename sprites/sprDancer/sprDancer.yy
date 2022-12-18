@@ -91,6 +91,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Limo",
-    "path": "folders/Sprites/Backgrounds/Stages/Limo.yy",
+    "path": "folders/Game/Sprites/Backgrounds/Stages/Limo.yy",
   },
 }

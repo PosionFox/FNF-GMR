@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Spookeez_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Spookeez_Inst.ogg",
   "duration": 99.21806,
   "parent": {
-    "name": "Spookeez",
-    "path": "folders/Sounds/Music/Week 2/Spookeez.yy",
+    "name": "Spooky",
+    "path": "folders/Game/Characters/Spooky.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Spookeez_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

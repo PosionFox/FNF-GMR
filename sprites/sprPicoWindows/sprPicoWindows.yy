@@ -77,6 +77,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Philly",
-    "path": "folders/Sprites/Backgrounds/Stages/Philly.yy",
+    "path": "folders/Game/Sprites/Backgrounds/Stages/Philly.yy",
   },
 }

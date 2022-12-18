@@ -15,4 +15,4 @@ sprites.right = sprMonsterChristRight;
 
 // Inherit the parent event
 event_inherited();
-
+texGroup = "tgWeek5";

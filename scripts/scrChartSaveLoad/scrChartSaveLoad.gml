@@ -481,6 +481,9 @@ function character_get_icon(name)
 		case "gold":
 			icon = sprGoldIcon;
 		break;
+		case "silver":
+			icon = sprSilverIcon;
+		break;
 	}
 	return icon;
 }

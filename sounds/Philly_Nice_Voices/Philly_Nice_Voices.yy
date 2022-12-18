@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Philly_Nice_Voices",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Philly_Nice_Voices.ogg",
   "duration": 101.48572,
   "parent": {
-    "name": "Philly",
-    "path": "folders/Sounds/Music/Week 3/Philly.yy",
+    "name": "Pico",
+    "path": "folders/Game/Characters/Pico.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Philly_Nice_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }
