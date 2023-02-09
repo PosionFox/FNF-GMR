@@ -9,8 +9,10 @@ if (objPersist.timeUntilMoveOn < objPersist.timeUntilMoveOnMax)
 
 	// draw the hud
 	if !(surface_exists(global.hudSurface)) global.hudSurface = surface_create(1280, 720);
+	if (!surface_exists(hudSurf)) hudSurf = surface_create(1280, 720);
+	if (!surface_exists(surf_arrows)) surf_arrows = surface_create(1280, 720);
 	//draw_surface_stretched(global.hudSurface, camX - 640 - (hudBopScale / 2), camY - 360 - (hudBopScale / 2), global.camWidth + hudBopScale,  global.camHeight + hudBopScale);
-	surface_set_target(global.hudSurface);
+	surface_set_target(surf_arrows);
 	draw_clear_alpha(c_white,0);
 	if (instance_exists(objArrowBtnParent))
 	{
@@ -47,10 +49,27 @@ if (objPersist.timeUntilMoveOn < objPersist.timeUntilMoveOnMax)
 		}
 	}
 	surface_reset_target();
+	surface_set_target(global.hudSurface);
+	draw_clear_alpha(c_white,0);
+	
+	
+	surface_reset_target();
 	
 	var camHeightDown = ((global.camHeight / global.camZoom) * global.downScroll) * (1 + hudBop);
 	var camHeightNegative = global.camHeight / global.camZoom;
 	if (global.downScroll) camHeightNegative = -global.camHeight;
-	draw_surface_ext(global.hudSurface, arrowsX + camX - (hudBop * 640), arrowsY + (camY + camHeightDown) - (hudBop * 360), ((global.camWidth / global.camZoom) / 1280) * (1 + hudBop), ((camHeightNegative / global.camZoom) / 720) * (1 + hudBop), 0, c_white, hudAlpha);
+	var _xx = arrowsX + camX - (hudBop * 640);
+	var _yy = arrowsY + (camY + camHeightDown) - (hudBop * 360)
+	var _xscale = ((global.camWidth / global.camZoom) / 1280) * (1 + hudBop);
+	var _yscale = ((camHeightNegative / global.camZoom) / 720) * (1 + hudBop);
 	
+	draw_surface_ext(global.hudSurface, _xx, _yy, _xscale, _yscale, 0, c_white, hudAlpha);
+	if (!global.middle_scroll)
+	{
+		draw_surface_ext(surf_arrows, _xx, _yy, _xscale, _yscale, 0, c_white, hudAlpha);
+	}
+	else
+	{
+		draw_surface_ext(surf_arrows, _xx - 256, _yy, _xscale, _yscale, 0, c_white, hudAlpha);
+	}
 }

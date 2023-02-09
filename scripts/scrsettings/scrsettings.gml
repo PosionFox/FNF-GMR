@@ -80,6 +80,7 @@ function SettingInt(_name = "int", _desc = "", _var, _min = 0, _max = 1, _cb) : 
 			value++;
 		}
 		value = min(value, thresholdMax);
+		update_ref();
 		callback();
 	}
 	static pressLeft = function()
@@ -93,7 +94,15 @@ function SettingInt(_name = "int", _desc = "", _var, _min = 0, _max = 1, _cb) : 
 			value--;
 		}
 		value = max(value, thresholdMin);
+		update_ref();
 		callback();
+	}
+	static update_ref = function()
+	{
+		if (variable_global_exists(refVar))
+		{
+			variable_global_set(refVar, value);
+		}
 	}
 }
 

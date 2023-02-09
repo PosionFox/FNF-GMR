@@ -10,6 +10,10 @@ holdAnimation = false;
 singFrameMulti = 1;
 bpmTimer = 0;
 threeFrame = false;
+if (global.middle_scroll)
+{
+	hideArrows = true;
+}
 
 killIfLowAccuracy = false;
 

@@ -9,7 +9,7 @@ for (var i = 0; i < array_length(songsList); ++i)
 	yOffset[i] = lerp(yOffset[i], 120 * (curSelected - i), 0.1);
 	xOffset[i] = lerp(xOffset[i], 16 * (curSelected - i), 0.1);
 	var songDisplay = songsList[i];
-	if (global.customFreeplay) { songDisplay = string_copy(songsList[i], 0, 13); }
+	//if (global.customFreeplay) { songDisplay = string_copy(songsList[i], 0, 13); }
 	draw_text(60 + xOffset[i], 300 + yOffset[i], songDisplay);
 	
 	var _xi = 55 + xOffset[i] + string_width(songDisplay) + sprite_get_bbox_right(songsIconList[i]);

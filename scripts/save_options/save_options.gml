@@ -8,6 +8,7 @@ function save_options(){
 	ini_write_real("Options", "AdvancedHud", global.advancedHud);
 	ini_write_real("Options", "Offset", global.offset);
 	ini_write_real("Options", "Downscroll", global.downScroll);
+	ini_write_real("Options", "Middlescroll", global.middle_scroll);
 	ini_write_real("Options", "AudioSyncGroup", global.audioSyncGroup);
 	ini_write_real("Options", "GhostTapping", global.ghostTapping);
 	

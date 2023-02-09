@@ -40,7 +40,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Game/Objects.yy",
+    "name": "Characters",
+    "path": "folders/Game/Characters.yy",
   },
 }

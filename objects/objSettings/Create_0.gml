@@ -21,9 +21,10 @@ catPreferences.addSettings([
 	}),
 	new SettingInt("offset", "Negative Numbers - Late\nPositive Numbers - Early\nShift = +5", "offset", -100, 100),
 	new SettingBool("downscroll", "Notes scroll downwards instead of up.\nSimilar to osu!mania.", "downScroll"),
+	new SettingBool("middlescroll", "Notes are centered on the screen.", "middle_scroll"),
 	new SettingBool("ghost tapping", "You won't miss if there are no notes nearby.", "ghostTapping"),
 	new SettingBool("advanced hud", "Adds extra information under the health bar.", "advancedHud"),
-	new SettingBool("audio sync", "Improves song synchronization but\nmight mess with sound pitch.", "audioSyncGroup"),
+	new SettingBool("audio sync", "Improves song synchronization but\nmight mess with the game.", "audioSyncGroup"),
 	new SettingBool("discord", "Shows what song you are playing in discord.\n(Requires Restart)", "discordEnabled")
 ]);
 

@@ -30,6 +30,8 @@ hudSurf = surface_create(1280, 720);
 hudTimer = 0;
 hudBop = 0;
 
+surf_arrows = surface_create(1280, 720);
+
 hudAlpha = 0;
 hudAlphaTarget = 1;
 hudAlphaSpd = 0.01;

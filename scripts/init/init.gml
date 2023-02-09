@@ -65,6 +65,7 @@ global.bSides = false;
 global.offset = 0;
 global.advancedHud = false;
 global.downScroll = false;
+global.middle_scroll = false;
 
 global.volume = 1;
 global.controller = 1;

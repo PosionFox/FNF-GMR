@@ -18,6 +18,7 @@ function load_data()
 	global.advancedHud = ini_read_real("Options", "AdvancedHud", false);
 	global.offset = ini_read_real("Options", "Offset", 0);
 	global.downScroll = ini_read_real("Options", "Downscroll", false);
+	global.middle_scroll = ini_read_real("Options", "Middlescroll", false);
 	global.audioSyncGroup = ini_read_real("Options", "AudioSyncGroup", false);
 	
 	global.particles = ini_read_real("Graphics", "Particles", true);

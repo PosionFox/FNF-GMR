@@ -1,8 +1,4 @@
 
-if (!surface_exists(hudSurf))
-{
-	hudSurf = surface_create(1280, 720);
-}
 
 if (bpmTimer >= 120)
 {

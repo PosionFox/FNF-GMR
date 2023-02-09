@@ -221,6 +221,10 @@ function stage_autodetect_by_song(songName)
 			return "darkness";
 		break;
 		
+		case "improbable-outset":
+			return "nevada1";
+		break;
+		
 		default:
 			return "stage";
 		break;
@@ -268,7 +272,10 @@ function stage_get_room(name)
 			return rmWeekDarkness;
 		break;
 		case "feralisleep":
-			return rmFeralisleep
+			return rmFeralisleep;
+		break;
+		case "nevada1":
+			return rmNevada_1;
 		break;
 		
 		default:
@@ -483,6 +490,9 @@ function character_get_icon(name)
 		break;
 		case "silver":
 			icon = sprSilverIcon;
+		break;
+		case "trickyMask":
+			icon = sprTrickyMaskIcon;
 		break;
 	}
 	return icon;

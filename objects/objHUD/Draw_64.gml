@@ -36,7 +36,7 @@ if !(global.flashlight)
 	//draw_sprite_ext(character_get_icon(global.songData[$ "player2"]),enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
 	if (instance_exists(objEnemy))
 	{
-		draw_sprite_ext(objEnemy.icon,enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
+		draw_sprite_ext(objEnemy.icon, enemyIcon + enemyHpLow, x - hpWidth , y, 1 + iconBop, 1 + iconBop, 0, c_white, 1); // enemy icon
 	}
 	draw_sprite_ext(bfIconSpr,bfIcon + boyHpLow,x - hpWidth, y, -1 + -iconBop, 1 + iconBop, 0, c_white, 1); // boy icon
 }
