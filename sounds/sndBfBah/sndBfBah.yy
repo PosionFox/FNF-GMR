@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sndBfBah",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBfBah.mp3",
-  "duration": 0.266224,
+  "duration": 0.261224,
   "parent": {
-    "name": "Boyfriend Sounds",
-    "path": "folders/Sounds/Boyfriend Sounds.yy",
+    "name": "Boyfriend",
+    "path": "folders/Game/Characters/Boyfriend.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sndBfBah",
-  "tags": [],
-  "resourceType": "GMSound",
 }

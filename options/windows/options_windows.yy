@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMWindowsOptions",
+  "resourceVersion": "1.1",
+  "name": "Windows",
   "option_windows_display_name": "Friday Night Funkin GMR",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "0.0.0.6",
+  "option_windows_version": "0.0.3.0",
   "option_windows_company_info": "Codist",
   "option_windows_product_info": "Friday Night Funkin' | GMS2 Remake",
   "option_windows_copyright_info": "",
@@ -28,9 +31,4 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": false,
-  "option_windows_use_x64": false,
-  "resourceVersion": "1.1",
-  "name": "Windows",
-  "tags": [],
-  "resourceType": "GMWindowsOptions",
 }

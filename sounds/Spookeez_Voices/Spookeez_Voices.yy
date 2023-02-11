@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Spookeez_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Spookeez_Voices.ogg",
-  "duration": 99.17536,
+  "duration": 99.170364,
   "parent": {
-    "name": "Spookeez",
-    "path": "folders/Sounds/Music/Week 2/Spookeez.yy",
+    "name": "Spooky",
+    "path": "folders/Game/Characters/Spooky.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Spookeez_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

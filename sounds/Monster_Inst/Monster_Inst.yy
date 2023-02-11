@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Monster_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Monster_Inst.ogg",
-  "duration": 177.716019,
+  "duration": 177.71602,
   "parent": {
     "name": "Monster",
-    "path": "folders/Sounds/Music/Week 2/Monster.yy",
+    "path": "folders/Game/Characters/Monster.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Monster_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

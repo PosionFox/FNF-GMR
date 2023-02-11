@@ -57,11 +57,11 @@ function options_select(category, option)
 			if (option = 5) {changeKey = "accept"; globalToChange = "acceptKeybind";}
 			if (option = 6) {changeKey = "back"; globalToChange = "backKeybind";}
 		
-			var o = instance_create_depth(x, y, -1000, oMapKey);
+			var o = instance_create_depth(x, y, -1000, objMapKey);
 			o.keyString = changeKey;
 			o.globalString = globalToChange;
 		break;
 	}
-	audio_play_sound(confirmMenu, 0, false);
+	audio_play_sound(sndConfirmMenu, 0, false);
 }
 

@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "ballistic_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Ballistic_Voices.ogg",
-  "duration": 153.410141,
+  "soundFile": "ballistic_Voices.ogg",
+  "duration": 153.40515,
   "parent": {
-    "name": "Ballistic",
-    "path": "folders/Sounds/Music/Special/Ballistic.yy",
+    "name": "Whitty",
+    "path": "folders/Game/Characters/Whitty.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Ballistic_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

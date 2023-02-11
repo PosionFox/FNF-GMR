@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Test_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -14,10 +18,6 @@
   "duration": 102.471664,
   "parent": {
     "name": "Test",
-    "path": "folders/Sounds/Music/Special/Test.yy",
+    "path": "folders/Game/Sounds/Music/Special/Test.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Test_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

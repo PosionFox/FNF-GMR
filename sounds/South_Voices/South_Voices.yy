@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "South_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "South_Voices.ogg",
-  "duration": 88.7309647,
+  "duration": 88.730965,
   "parent": {
-    "name": "South",
-    "path": "folders/Sounds/Music/Week 2/South.yy",
+    "name": "Spooky",
+    "path": "folders/Game/Characters/Spooky.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "South_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

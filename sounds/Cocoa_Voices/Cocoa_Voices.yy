@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Cocoa_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Cocoa_Voices.mp3",
   "duration": 115.2311,
   "parent": {
-    "name": "Cocoa",
-    "path": "folders/Sounds/Music/Week 5/Cocoa.yy",
+    "name": "Christmas Parents",
+    "path": "folders/Game/Characters/Christmas Parents.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Cocoa_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

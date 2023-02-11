@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Bopeedist_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -14,10 +18,6 @@
   "duration": 9.757737,
   "parent": {
     "name": "Special",
-    "path": "folders/Sounds/Music/Special.yy",
+    "path": "folders/Game/Sounds/Music/Special.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Bopeedist_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

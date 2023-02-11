@@ -1,5 +1,6 @@
 {
 	"song": {
+		"stage":"stage",
 		"player1": "bf",
 		"player2": "dad",
 		"notes": [

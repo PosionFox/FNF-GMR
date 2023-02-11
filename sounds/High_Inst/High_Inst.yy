@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "High_Inst",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "High_Inst.mp3",
   "duration": 105.6,
   "parent": {
-    "name": "High",
-    "path": "folders/Sounds/Music/Week 4/High.yy",
+    "name": "Mom",
+    "path": "folders/Game/Characters/Mom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "High_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

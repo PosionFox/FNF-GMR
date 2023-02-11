@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Cookies_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -14,10 +18,6 @@
   "duration": 110.405,
   "parent": {
     "name": "Cookies",
-    "path": "folders/Sounds/Music/Special/Cookies.yy",
+    "path": "folders/Game/Sounds/Music/Special/Cookies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Cookies_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

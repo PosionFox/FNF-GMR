@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Senpai_Inst",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -14,10 +18,6 @@
   "duration": 98.29739,
   "parent": {
     "name": "Senpai",
-    "path": "folders/Sounds/Music/Week 6/Senpai.yy",
+    "path": "folders/Game/Characters/Senpai.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Senpai_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

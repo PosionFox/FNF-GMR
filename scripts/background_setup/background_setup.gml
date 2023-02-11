@@ -1,8 +1,10 @@
 //setup the backgrounds depending on the enemy being fought
-function background_setup(){
+function background_setup()
+{
 	// zoom the camera
-	global.camWidth = 1280;
-	global.camHeight = 720;
+	//global.camWidth = 1280;
+	//global.camHeight = 720;
+	global.camZoom = 1;
 	
 	// dad / everyone else
 	if (global.enemy <= 1) or (global.enemy > 11) {
@@ -23,8 +25,9 @@ function background_setup(){
 		if (global.enemy = 2) offsetY = 100;
 		
 		// zoom the camera
-		global.camWidth = 1152;
-		global.camHeight = 648;
+		//global.camWidth = 1152;
+		//global.camHeight = 648;
+		global.camZoom = 1.111;
 	}
 	
 	// go pico
@@ -47,8 +50,9 @@ function background_setup(){
 		offsetX = 100;
 		
 		// zoom the camera
-		global.camWidth = 1152;
-		global.camHeight = 648;
+		//global.camWidth = 1152;
+		//global.camHeight = 648;
+		global.camZoom = 1.111;
 	}
 	
 	// mother
@@ -79,17 +83,17 @@ function background_setup(){
 		layer_sprite_speed(dancer4, spd);
 		
 		// change the bf's position
-		oBoyfriend.x = 1601;
-		oBoyfriend.y = 700;
+		objBoyfriend.x = 1601;
+		objBoyfriend.y = 700;
 		
 		// change the moms position
-		oEnemy.x = 752;
-		oEnemy.y = 948;
+		objEnemy.x = 752;
+		objEnemy.y = 948;
 		
 		// change the gf's position
-		oGirlfriend.layer = bgMomGF;
-		oGirlfriend.x = 1151;
-		oGirlfriend.y = 886;
+		objGirlfriend.layer = bgMomGF;
+		objGirlfriend.x = 1151;
+		objGirlfriend.y = 886;
 		
 		// change the cameras offset
 		offsetY = -180;
@@ -122,20 +126,21 @@ function background_setup(){
 		layer_sprite_speed(dancer3, spd);
 		
 		// change the bf's position
-		oBoyfriend.x = 1920;
-		oBoyfriend.y = 1056;
+		objBoyfriend.x = 1920;
+		objBoyfriend.y = 1056;
 		
 		// change the parents position
-		oEnemy.x = 871;
-		oEnemy.y = 1050;
+		objEnemy.x = 871;
+		objEnemy.y = 1050;
 		
 		// change the gf's position
-		oGirlfriend.x = 1614;
-		oGirlfriend.y = 1002;
+		objGirlfriend.x = 1614;
+		objGirlfriend.y = 1002;
 		
 		// zoom the camera
-		global.camWidth = 1456;
-		global.camHeight = 819;
+		//global.camWidth = 1456;
+		//global.camHeight = 819;
+		global.camZoom = 0.879;
 		
 		// change the cameras offset
 		offsetX = -40;
@@ -156,15 +161,15 @@ function background_setup(){
 		layer_x(bgChristEvilBG, (camX * 0.9) - 640);
 		
 		// change the bf's position
-		oBoyfriend.x = 1672;
-		oBoyfriend.y = 1280;
+		objBoyfriend.x = 1672;
+		objBoyfriend.y = 1280;
 		
 		// change the parents position
-		oEnemy.x = 840;
-		oEnemy.y = 1280;
+		objEnemy.x = 840;
+		objEnemy.y = 1280;
 		
 		// change the gf's position
-		oGirlfriend.y = 1248;
+		objGirlfriend.y = 1248;
 		
 		// change the cameras offset
 		offsetY = 235;
@@ -172,8 +177,9 @@ function background_setup(){
 		bfOffsetX = 230;
 		bfOffsetY = 260;
 		
-		global.camWidth = 1120;
-		global.camHeight = 630;
+		//global.camWidth = 1120;
+		//global.camHeight = 630;
+		global.camZoom = 1.142;
 	}
 	
 	// senpai
@@ -188,7 +194,7 @@ function background_setup(){
 		
 			var spd = (global.bpm / 60) * global.deltaMultiplier;
 			var freaks = layer_sprite_get_id(bgSenpaiFreaks, "freaks");
-			if (global.enemy = 9) layer_sprite_change(freaks, sWeebFreaksScared);
+			if (global.enemy = 9) layer_sprite_change(freaks, sprWeebFreaksScared);
 			layer_sprite_speed(freaks, spd);
 		} else {
 			layer_set_visible(bgSpirit, true);
@@ -226,18 +232,19 @@ function background_setup(){
 		layer_sprite_speed(tower, spd);
 		
 		// change the bf's position
-		oBoyfriend.x = 1606;
-		oBoyfriend.y = 1045;
+		objBoyfriend.x = 1606;
+		objBoyfriend.y = 1045;
 		
 		// change the parents position
-		oEnemy.x = 900;
-		oEnemy.y = 1051;
+		objEnemy.x = 900;
+		objEnemy.y = 1051;
 		
 		offsetY = 135;
 		bfOffsetY = 25;
 		
-		global.camWidth = 1280;
-		global.camHeight = 720;
+		//global.camWidth = 1280;
+		//global.camHeight = 720;
+		global.camZoom = 1;
 	}
 	
 	// stupid special codist week
@@ -246,11 +253,12 @@ function background_setup(){
 		layer_set_visible(bgCodist, true);
 		
 		// move oxi
-		oEnemy.x = 992;
+		objEnemy.x = 992;
 		
 		// zoom the camera
-		global.camWidth = 1152;
-		global.camHeight = 648;
+		//global.camWidth = 1152;
+		//global.camHeight = 648;
+		global.camZoom = 1.111;
 		
 		// change the cameras offset
 		offsetY = 150;
@@ -266,7 +274,8 @@ function background_setup(){
 		bfOffsetY = 25;
 		
 		// zoom the camera
-		global.camWidth = 1152;
-		global.camHeight = 648;
+		//global.camWidth = 1152;
+		//global.camHeight = 648;
+		global.camZoom = 1.111;
 	}
 }

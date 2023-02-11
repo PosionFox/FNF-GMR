@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sndBfEee",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "sndBfEee.mp3",
   "duration": 0.422959,
   "parent": {
-    "name": "Boyfriend Sounds",
-    "path": "folders/Sounds/Boyfriend Sounds.yy",
+    "name": "Boyfriend",
+    "path": "folders/Game/Characters/Boyfriend.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sndBfEee",
-  "tags": [],
-  "resourceType": "GMSound",
 }

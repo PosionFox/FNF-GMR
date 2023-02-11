@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Bopeebo_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -13,11 +17,7 @@
   "soundFile": "Bopeebo_Voices.ogg",
   "duration": 76.8,
   "parent": {
-    "name": "Bopeebo",
-    "path": "folders/Sounds/Music/Week 1/Bopeebo.yy",
+    "name": "Dad",
+    "path": "folders/Game/Characters/Dad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Bopeebo_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

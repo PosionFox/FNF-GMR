@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Pico_Voices",
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Pico_Voices.ogg",
-  "duration": 84.8126,
+  "duration": 84.807594,
   "parent": {
     "name": "Pico",
-    "path": "folders/Sounds/Music/Week 3/Pico.yy",
+    "path": "folders/Game/Characters/Pico.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Pico_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

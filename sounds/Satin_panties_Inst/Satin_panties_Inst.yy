@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Satin_Panties_Inst",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Satin_Panties_Inst.ogg",
   "duration": 96.02612,
   "parent": {
-    "name": "Satin Panties",
-    "path": "folders/Sounds/Music/Week 4/Satin Panties.yy",
+    "name": "Mom",
+    "path": "folders/Game/Characters/Mom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Satin_Panties_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }

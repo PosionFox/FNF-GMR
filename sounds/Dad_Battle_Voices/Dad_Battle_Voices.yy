@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Dad_Battle_Voices",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Dad_Battle_Voices.ogg",
   "duration": 86.67928,
   "parent": {
-    "name": "Dadbattle",
-    "path": "folders/Sounds/Music/Week 1/Dadbattle.yy",
+    "name": "Dad",
+    "path": "folders/Game/Characters/Dad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Dad_Battle_Voices",
-  "tags": [],
-  "resourceType": "GMSound",
 }

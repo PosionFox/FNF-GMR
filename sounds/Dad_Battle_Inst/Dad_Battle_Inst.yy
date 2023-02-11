@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Dad_Battle_Inst",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Dad_Battle_Inst.ogg",
-  "duration": 86.6742859,
+  "duration": 86.674286,
   "parent": {
-    "name": "Dadbattle",
-    "path": "folders/Sounds/Music/Week 1/Dadbattle.yy",
+    "name": "Dad",
+    "path": "folders/Game/Characters/Dad.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Dad_Battle_Inst",
-  "tags": [],
-  "resourceType": "GMSound",
 }
